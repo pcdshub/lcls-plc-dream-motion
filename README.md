@@ -1,16 +1,12 @@
-# lcls-plc-template-twincat-project
+# lcls-plc-dream-motion
 
-This repository contains the standard files for starting a TwinCAT3 project and
-can be used as a template. 
 
 For more documentation on integrating TwinCAT3 and git, please see our confluence page:
 https://confluence.slac.stanford.edu/display/PCDS/TwinCAT+3+Git+Setup+and+Best+Practices
 
 ## When starting a new project
 
- - [ ] Name your repository appropriately (see below)
- - [ ] Customize this ``README.md`` to match your own project.
- - [ ] Create an Environment on GitHub called ``gh-pages`` for documentation deployment. 
+
 
 Settings -> Environments -> New Environment -> name it "gh-pages" -> "Configure environment" -> "Save protection rules".
 
