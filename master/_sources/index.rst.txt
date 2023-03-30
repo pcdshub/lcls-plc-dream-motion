@@ -1,0 +1,30 @@
+lcls-plc-dream-motion
+---------------------
+
+.. toctree::
+    :maxdepth: 2
+    :caption: lcls-plc-dream-motion
+
+    lcls-plc-dream-motion_pragmas
+    lcls-plc-dream-motion_nc
+    lcls-plc-dream-motion_ethercat
+    lcls-plc-dream-motion_boxes
+    lcls-plc-dream-motion_links
+
+
+.. toctree::
+    :maxdepth: 2
+    :caption: lcls_dream_motion
+
+    lcls-plc-dream-motion_lcls_dream_motion_summary
+    lcls-plc-dream-motion_lcls_dream_motion_epics
+    lcls-plc-dream-motion_lcls_dream_motion_source
+
+
+
+Indices and tables
+==================
+
+* :ref:`genindex`
+* :ref:`modindex`
+* :ref:`search`
