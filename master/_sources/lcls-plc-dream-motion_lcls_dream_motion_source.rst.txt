@@ -1,0 +1,152 @@
+
+
+DUTs
+----
+
+
+GVLs
+----
+
+
+Main
+^^^^
+
+::
+
+    {attribute 'qualified_only'}
+    VAR_GLOBAL
+        {attribute 'pytmc' := 'pv: '}
+        {attribute 'TcLinkTo' := '.bLimitForwardEnable  := TIIB[DRL_05_EL7047_E1]^STM Status^Status^Digital input 1;
+                                  .bLimitBackwardEnable := TIIB[DRL_05_EL7047_E1]^STM Status^Status^Digital input 2;
+                                  .nRawEncoderULINT     := TIIB[DRL_05_EL5042_E2]^FB Inputs Channel 1^Position'}
+        M1: DUT_MotionStage := (sName := ' ');
+
+        {attribute 'pytmc' := 'pv: '}
+        {attribute 'TcLinkTo' := '.bLimitForwardEnable  := TIIB[DRL_05_EL7047_E3]^STM Status^Status^Digital input 1;
+                                  .bLimitBackwardEnable := TIIB[DRL_05_EL7047_E3]^STM Status^Status^Digital input 2;
+                                  .nRawEncoderULINT     := TIIB[DRL_05_EL5042_E2]^FB Inputs Channel 2^Position'}
+        M2: DUT_MotionStage := (sName := ' ');
+
+        {attribute 'pytmc' := 'pv: '}
+        {attribute 'TcLinkTo' := '.bLimitForwardEnable  := TIIB[DRL_05_EL7047_E4]^STM Status^Status^Digital input 1;
+                                  .bLimitBackwardEnable := TIIB[DRL_05_EL7047_E4]^STM Status^Status^Digital input 2;
+                                  .nRawEncoderULINT     := TIIB[DRL_05_EL5042_E5]^FB Inputs Channel 1^Position'}
+        M3: DUT_MotionStage := (sName := ' ');
+
+        {attribute 'pytmc' := 'pv: '}
+        {attribute 'TcLinkTo' := '.bLimitForwardEnable  := TIIB[DRL_05_EL7047_E6]^STM Status^Status^Digital input 1;
+                                  .bLimitBackwardEnable := TIIB[DRL_05_EL7047_E6]^STM Status^Status^Digital input 2;
+                                  .nRawEncoderULINT     := TIIB[DRL_05_EL5042_E5]^FB Inputs Channel 2^Position'}
+        M4: DUT_MotionStage := (sName := ' ');
+
+        {attribute 'pytmc' := 'pv: '}
+        {attribute 'TcLinkTo' := '.bLimitForwardEnable  := TIIB[DRL_05_EL7047_E7]^STM Status^Status^Digital input 1;
+                                  .bLimitBackwardEnable := TIIB[DRL_05_EL7047_E7]^STM Status^Status^Digital input 2;
+                                  .nRawEncoderULINT     := TIIB[DRL_05_EL5042_E8]^FB Inputs Channel 1^Position'}
+        M5: DUT_MotionStage := (sName := ' ');
+
+        {attribute 'pytmc' := 'pv: DREAM:GSJN:MMS:X'}
+        {attribute 'TcLinkTo' := '.bLimitForwardEnable  := TIIB[DRL_05_EL7047_E9]^STM Status^Status^Digital input 1;
+                                  .bLimitBackwardEnable := TIIB[DRL_05_EL7047_E9]^STM Status^Status^Digital input 2;
+                                  .nRawEncoderULINT     := TIIB[DRL_05_EL5042_E8]^FB Inputs Channel 2^Position'}
+        M6: DUT_MotionStage := (sName := 'DREAM:GSJN:MMS:X');
+
+        {attribute 'pytmc' := 'pv: DREAM:GSJN:MMS:Y'}
+        {attribute 'TcLinkTo' := '.bLimitForwardEnable  := TIIB[DRL_05_EL7047_E10]^STM Status^Status^Digital input 2;
+                                  .bLimitBackwardEnable := TIIB[DRL_05_EL7047_E10]^STM Status^Status^Digital input 1;
+                                  .nRawEncoderULINT     := TIIB[DRL_05_EL5042_E11]^FB Inputs Channel 1^Position'}
+        M7: DUT_MotionStage := (sName := 'DREAM:GSJN:MMS:Y');
+
+        {attribute 'pytmc' := 'pv: DREAM:GSJN:MMS:Z'}
+        {attribute 'TcLinkTo' := '.bLimitForwardEnable  := TIIB[DRL_05_EL7047_E12]^STM Status^Status^Digital input 1;
+                                  .bLimitBackwardEnable := TIIB[DRL_05_EL7047_E12]^STM Status^Status^Digital input 2;
+                                  .nRawEncoderULINT     := TIIB[DRL_05_EL5042_E11]^FB Inputs Channel 2^Position'}
+        M8: DUT_MotionStage := (sName := 'DREAM:GSJN:MMS:Z');
+
+
+    END_VAR
+
+
+
+
+POUs
+----
+
+
+PRG_GasNozzleXYZ
+^^^^^^^^^^^^^^^^
+
+::
+
+    PROGRAM PRG_GasNozzleXYZ
+    VAR
+        fb_GSJN_X : FB_MotionStage;
+        fb_GSJN_Y : FB_MotionStage;
+        fb_GSJN_Z : FB_MotionStage;
+
+        bInit : BOOl := TRUE;
+
+    END_VAR
+    IF ( bInit) THEN
+        bInit := FALSE;
+        Main.M6.bHardwareEnable := TRUE;
+        Main.M6.bPowerSelf := TRUE;
+        Main.M6.nBrakeMode := ENUM_StageBrakeMode.NO_BRAKE;
+        Main.M6.nEnableMode := ENUM_StageEnableMode.DURING_MOTION;
+        END_IF
+
+    // M7
+
+    IF ( bInit) THEN
+        bInit := FALSE;
+        Main.M7.bHardwareEnable := TRUE;
+        Main.M7.bPowerSelf := TRUE;
+        Main.M7.nBrakeMode := ENUM_StageBrakeMode.NO_BRAKE;
+        Main.M7.nEnableMode := ENUM_StageEnableMode.DURING_MOTION;
+        END_IF
+    //
+    fb_GSJN_X(stMotionStage:=Main.M6);
+    fb_GSJN_Y(stMotionStage:=Main.M7);
+    fb_GSJN_Z(stMotionStage:=Main.M8);
+
+    END_PROGRAM
+
+
+Related:
+    * `Main`_
+
+
+PRG_MAIN
+^^^^^^^^
+
+::
+
+    PROGRAM PRG_MAIN
+    VAR
+        // variables for testing
+        axis: AXIS_REF;
+        power: MC_POWER;
+
+        retractedLS AT %I* : BOOL;
+        extendedLS At %I* :BOOL;
+
+    END_VAR
+    (*
+       This is to test axis safely by both limit switch enabled.
+       manually link the variables "retractedLS" and "extendedLS" to the imit switches inputs
+
+       Standard limit switches are NC, enable/disable both directions directly by limit switches
+      if limit swithes are NO, enable/disable the related direction using reversed limit switch reading.
+
+    *)
+    power(Axis:=axis, Enable_Positive := retractedLS or extendedLS, Enable_Negative:= extendedLS or retractedLS);
+    //power(Axis:=axis, Enable_Positive := NOT retractedLS, Enable_Negative:= NOT extendedLS);
+
+    PRG_GasNozzleXYZ();
+
+    END_PROGRAM
+
+
+Related:
+    * `PRG_GasNozzleXYZ`_
+

@@ -1,0 +1,144 @@
+
+Links
+-----
+
+.. csv-table::
+    :header: Owner A, Item A, Owner B, Item B
+    :align: center
+
+        , Drive^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^K4S08_DRL_02_E0_EK1200^K4S08_DRL_02_E4_EK1122^K4S08_DRL_05_E0_EK1100^DRL_05_EL7047_E9, STM Status^Status^Error
+        , Drive^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^K4S08_DRL_02_E0_EK1200^K4S08_DRL_02_E4_EK1122^K4S08_DRL_05_E0_EK1100^DRL_05_EL7047_E9, STM Status^Status^Motor stall
+        , Drive^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^K4S08_DRL_02_E0_EK1200^K4S08_DRL_02_E4_EK1122^K4S08_DRL_05_E0_EK1100^DRL_05_EL7047_E9, STM Status^Status^Moving negative
+        , Drive^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^K4S08_DRL_02_E0_EK1200^K4S08_DRL_02_E4_EK1122^K4S08_DRL_05_E0_EK1100^DRL_05_EL7047_E9, STM Status^Status^Moving positive
+        , Drive^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^K4S08_DRL_02_E0_EK1200^K4S08_DRL_02_E4_EK1122^K4S08_DRL_05_E0_EK1100^DRL_05_EL7047_E9, STM Status^Status^Ready
+        , Drive^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^K4S08_DRL_02_E0_EK1200^K4S08_DRL_02_E4_EK1122^K4S08_DRL_05_E0_EK1100^DRL_05_EL7047_E9, STM Status^Status^Ready to enable
+        , Drive^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^K4S08_DRL_02_E0_EK1200^K4S08_DRL_02_E4_EK1122^K4S08_DRL_05_E0_EK1100^DRL_05_EL7047_E9, STM Status^Status^Torque reduced
+        , Drive^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^K4S08_DRL_02_E0_EK1200^K4S08_DRL_02_E4_EK1122^K4S08_DRL_05_E0_EK1100^DRL_05_EL7047_E9, STM Status^Status^Warning
+        , Drive^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^K4S08_DRL_02_E0_EK1200^K4S08_DRL_02_E4_EK1122^K4S08_DRL_05_E0_EK1100^DRL_05_EL7047_E10, STM Status^Status^Error
+        , Drive^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^K4S08_DRL_02_E0_EK1200^K4S08_DRL_02_E4_EK1122^K4S08_DRL_05_E0_EK1100^DRL_05_EL7047_E10, STM Status^Status^Motor stall
+        , Drive^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^K4S08_DRL_02_E0_EK1200^K4S08_DRL_02_E4_EK1122^K4S08_DRL_05_E0_EK1100^DRL_05_EL7047_E10, STM Status^Status^Moving negative
+        , Drive^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^K4S08_DRL_02_E0_EK1200^K4S08_DRL_02_E4_EK1122^K4S08_DRL_05_E0_EK1100^DRL_05_EL7047_E10, STM Status^Status^Moving positive
+        , Drive^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^K4S08_DRL_02_E0_EK1200^K4S08_DRL_02_E4_EK1122^K4S08_DRL_05_E0_EK1100^DRL_05_EL7047_E10, STM Status^Status^Ready
+        , Drive^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^K4S08_DRL_02_E0_EK1200^K4S08_DRL_02_E4_EK1122^K4S08_DRL_05_E0_EK1100^DRL_05_EL7047_E10, STM Status^Status^Ready to enable
+        , Drive^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^K4S08_DRL_02_E0_EK1200^K4S08_DRL_02_E4_EK1122^K4S08_DRL_05_E0_EK1100^DRL_05_EL7047_E10, STM Status^Status^Torque reduced
+        , Drive^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^K4S08_DRL_02_E0_EK1200^K4S08_DRL_02_E4_EK1122^K4S08_DRL_05_E0_EK1100^DRL_05_EL7047_E10, STM Status^Status^Warning
+        , Drive^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^K4S08_DRL_02_E0_EK1200^K4S08_DRL_02_E4_EK1122^K4S08_DRL_05_E0_EK1100^DRL_05_EL7047_E12, STM Status^Status^Error
+        , Drive^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^K4S08_DRL_02_E0_EK1200^K4S08_DRL_02_E4_EK1122^K4S08_DRL_05_E0_EK1100^DRL_05_EL7047_E12, STM Status^Status^Motor stall
+        , Drive^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^K4S08_DRL_02_E0_EK1200^K4S08_DRL_02_E4_EK1122^K4S08_DRL_05_E0_EK1100^DRL_05_EL7047_E12, STM Status^Status^Moving negative
+        , Drive^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^K4S08_DRL_02_E0_EK1200^K4S08_DRL_02_E4_EK1122^K4S08_DRL_05_E0_EK1100^DRL_05_EL7047_E12, STM Status^Status^Moving positive
+        , Drive^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^K4S08_DRL_02_E0_EK1200^K4S08_DRL_02_E4_EK1122^K4S08_DRL_05_E0_EK1100^DRL_05_EL7047_E12, STM Status^Status^Ready
+        , Drive^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^K4S08_DRL_02_E0_EK1200^K4S08_DRL_02_E4_EK1122^K4S08_DRL_05_E0_EK1100^DRL_05_EL7047_E12, STM Status^Status^Ready to enable
+        , Drive^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^K4S08_DRL_02_E0_EK1200^K4S08_DRL_02_E4_EK1122^K4S08_DRL_05_E0_EK1100^DRL_05_EL7047_E12, STM Status^Status^Torque reduced
+        , Drive^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^K4S08_DRL_02_E0_EK1200^K4S08_DRL_02_E4_EK1122^K4S08_DRL_05_E0_EK1100^DRL_05_EL7047_E12, STM Status^Status^Warning
+        , Drive^Inputs^In^nState2, TIID^Device 1 (EtherCAT)^K4S08_DRL_02_E0_EK1200^K4S08_DRL_02_E4_EK1122^K4S08_DRL_05_E0_EK1100^DRL_05_EL7047_E9, STM Status^Status^Digital input 1
+        , Drive^Inputs^In^nState2, TIID^Device 1 (EtherCAT)^K4S08_DRL_02_E0_EK1200^K4S08_DRL_02_E4_EK1122^K4S08_DRL_05_E0_EK1100^DRL_05_EL7047_E9, STM Status^Status^Digital input 2
+        , Drive^Inputs^In^nState2, TIID^Device 1 (EtherCAT)^K4S08_DRL_02_E0_EK1200^K4S08_DRL_02_E4_EK1122^K4S08_DRL_05_E0_EK1100^DRL_05_EL7047_E9, STM Status^Status^Sync error
+        , Drive^Inputs^In^nState2, TIID^Device 1 (EtherCAT)^K4S08_DRL_02_E0_EK1200^K4S08_DRL_02_E4_EK1122^K4S08_DRL_05_E0_EK1100^DRL_05_EL7047_E9, STM Status^Status^TxPDO Toggle
+        , Drive^Inputs^In^nState2, TIID^Device 1 (EtherCAT)^K4S08_DRL_02_E0_EK1200^K4S08_DRL_02_E4_EK1122^K4S08_DRL_05_E0_EK1100^DRL_05_EL7047_E10, STM Status^Status^Digital input 1
+        , Drive^Inputs^In^nState2, TIID^Device 1 (EtherCAT)^K4S08_DRL_02_E0_EK1200^K4S08_DRL_02_E4_EK1122^K4S08_DRL_05_E0_EK1100^DRL_05_EL7047_E10, STM Status^Status^Digital input 2
+        , Drive^Inputs^In^nState2, TIID^Device 1 (EtherCAT)^K4S08_DRL_02_E0_EK1200^K4S08_DRL_02_E4_EK1122^K4S08_DRL_05_E0_EK1100^DRL_05_EL7047_E10, STM Status^Status^Sync error
+        , Drive^Inputs^In^nState2, TIID^Device 1 (EtherCAT)^K4S08_DRL_02_E0_EK1200^K4S08_DRL_02_E4_EK1122^K4S08_DRL_05_E0_EK1100^DRL_05_EL7047_E10, STM Status^Status^TxPDO Toggle
+        , Drive^Inputs^In^nState2, TIID^Device 1 (EtherCAT)^K4S08_DRL_02_E0_EK1200^K4S08_DRL_02_E4_EK1122^K4S08_DRL_05_E0_EK1100^DRL_05_EL7047_E12, STM Status^Status^Digital input 1
+        , Drive^Inputs^In^nState2, TIID^Device 1 (EtherCAT)^K4S08_DRL_02_E0_EK1200^K4S08_DRL_02_E4_EK1122^K4S08_DRL_05_E0_EK1100^DRL_05_EL7047_E12, STM Status^Status^Digital input 2
+        , Drive^Inputs^In^nState2, TIID^Device 1 (EtherCAT)^K4S08_DRL_02_E0_EK1200^K4S08_DRL_02_E4_EK1122^K4S08_DRL_05_E0_EK1100^DRL_05_EL7047_E12, STM Status^Status^Sync error
+        , Drive^Inputs^In^nState2, TIID^Device 1 (EtherCAT)^K4S08_DRL_02_E0_EK1200^K4S08_DRL_02_E4_EK1122^K4S08_DRL_05_E0_EK1100^DRL_05_EL7047_E12, STM Status^Status^TxPDO Toggle
+        , Drive^Inputs^In^nState4, TIID^Device 1 (EtherCAT)^K4S08_DRL_02_E0_EK1200^K4S08_DRL_02_E4_EK1122^K4S08_DRL_05_E0_EK1100^DRL_05_EL7047_E9, WcState^InputToggle
+        , Drive^Inputs^In^nState4, TIID^Device 1 (EtherCAT)^K4S08_DRL_02_E0_EK1200^K4S08_DRL_02_E4_EK1122^K4S08_DRL_05_E0_EK1100^DRL_05_EL7047_E9, WcState^WcState
+        , Drive^Inputs^In^nState4, TIID^Device 1 (EtherCAT)^K4S08_DRL_02_E0_EK1200^K4S08_DRL_02_E4_EK1122^K4S08_DRL_05_E0_EK1100^DRL_05_EL7047_E10, WcState^InputToggle
+        , Drive^Inputs^In^nState4, TIID^Device 1 (EtherCAT)^K4S08_DRL_02_E0_EK1200^K4S08_DRL_02_E4_EK1122^K4S08_DRL_05_E0_EK1100^DRL_05_EL7047_E10, WcState^WcState
+        , Drive^Inputs^In^nState4, TIID^Device 1 (EtherCAT)^K4S08_DRL_02_E0_EK1200^K4S08_DRL_02_E4_EK1122^K4S08_DRL_05_E0_EK1100^DRL_05_EL7047_E12, WcState^InputToggle
+        , Drive^Inputs^In^nState4, TIID^Device 1 (EtherCAT)^K4S08_DRL_02_E0_EK1200^K4S08_DRL_02_E4_EK1122^K4S08_DRL_05_E0_EK1100^DRL_05_EL7047_E12, WcState^WcState
+        , Drive^Outputs^Out^nCtrl1, TIID^Device 1 (EtherCAT)^K4S08_DRL_02_E0_EK1200^K4S08_DRL_02_E4_EK1122^K4S08_DRL_05_E0_EK1100^DRL_05_EL7047_E9, STM Control^Control^Enable
+        , Drive^Outputs^Out^nCtrl1, TIID^Device 1 (EtherCAT)^K4S08_DRL_02_E0_EK1200^K4S08_DRL_02_E4_EK1122^K4S08_DRL_05_E0_EK1100^DRL_05_EL7047_E9, STM Control^Control^Reduce torque
+        , Drive^Outputs^Out^nCtrl1, TIID^Device 1 (EtherCAT)^K4S08_DRL_02_E0_EK1200^K4S08_DRL_02_E4_EK1122^K4S08_DRL_05_E0_EK1100^DRL_05_EL7047_E9, STM Control^Control^Reset
+        , Drive^Outputs^Out^nCtrl1, TIID^Device 1 (EtherCAT)^K4S08_DRL_02_E0_EK1200^K4S08_DRL_02_E4_EK1122^K4S08_DRL_05_E0_EK1100^DRL_05_EL7047_E10, STM Control^Control^Enable
+        , Drive^Outputs^Out^nCtrl1, TIID^Device 1 (EtherCAT)^K4S08_DRL_02_E0_EK1200^K4S08_DRL_02_E4_EK1122^K4S08_DRL_05_E0_EK1100^DRL_05_EL7047_E10, STM Control^Control^Reduce torque
+        , Drive^Outputs^Out^nCtrl1, TIID^Device 1 (EtherCAT)^K4S08_DRL_02_E0_EK1200^K4S08_DRL_02_E4_EK1122^K4S08_DRL_05_E0_EK1100^DRL_05_EL7047_E10, STM Control^Control^Reset
+        , Drive^Outputs^Out^nCtrl1, TIID^Device 1 (EtherCAT)^K4S08_DRL_02_E0_EK1200^K4S08_DRL_02_E4_EK1122^K4S08_DRL_05_E0_EK1100^DRL_05_EL7047_E12, STM Control^Control^Enable
+        , Drive^Outputs^Out^nCtrl1, TIID^Device 1 (EtherCAT)^K4S08_DRL_02_E0_EK1200^K4S08_DRL_02_E4_EK1122^K4S08_DRL_05_E0_EK1100^DRL_05_EL7047_E12, STM Control^Control^Reduce torque
+        , Drive^Outputs^Out^nCtrl1, TIID^Device 1 (EtherCAT)^K4S08_DRL_02_E0_EK1200^K4S08_DRL_02_E4_EK1122^K4S08_DRL_05_E0_EK1100^DRL_05_EL7047_E12, STM Control^Control^Reset
+        , Drive^Outputs^Out^nCtrl2, TIID^Device 1 (EtherCAT)^K4S08_DRL_02_E0_EK1200^K4S08_DRL_02_E4_EK1122^K4S08_DRL_05_E0_EK1100^DRL_05_EL7047_E9, STM Control^Control^Digital output 1
+        , Drive^Outputs^Out^nCtrl2, TIID^Device 1 (EtherCAT)^K4S08_DRL_02_E0_EK1200^K4S08_DRL_02_E4_EK1122^K4S08_DRL_05_E0_EK1100^DRL_05_EL7047_E10, STM Control^Control^Digital output 1
+        , Drive^Outputs^Out^nCtrl2, TIID^Device 1 (EtherCAT)^K4S08_DRL_02_E0_EK1200^K4S08_DRL_02_E4_EK1122^K4S08_DRL_05_E0_EK1100^DRL_05_EL7047_E12, STM Control^Control^Digital output 1
+        , Drive^Outputs^Out^nDataOut2[0], TIID^Device 1 (EtherCAT)^K4S08_DRL_02_E0_EK1200^K4S08_DRL_02_E4_EK1122^K4S08_DRL_05_E0_EK1100^DRL_05_EL7047_E9, STM Velocity^Velocity
+        , Drive^Outputs^Out^nDataOut2[0], TIID^Device 1 (EtherCAT)^K4S08_DRL_02_E0_EK1200^K4S08_DRL_02_E4_EK1122^K4S08_DRL_05_E0_EK1100^DRL_05_EL7047_E10, STM Velocity^Velocity
+        , Drive^Outputs^Out^nDataOut2[0], TIID^Device 1 (EtherCAT)^K4S08_DRL_02_E0_EK1200^K4S08_DRL_02_E4_EK1122^K4S08_DRL_05_E0_EK1100^DRL_05_EL7047_E12, STM Velocity^Velocity
+        , Enc^Inputs^In^nComState, TIID^Device 1 (EtherCAT)^K4S08_DRL_02_E0_EK1200^K4S08_DRL_02_E4_EK1122^K4S08_DRL_05_E0_EK1100^DRL_05_EL5042_E11, WcState^InputToggle
+        , Enc^Inputs^In^nComState, TIID^Device 1 (EtherCAT)^K4S08_DRL_02_E0_EK1200^K4S08_DRL_02_E4_EK1122^K4S08_DRL_05_E0_EK1100^DRL_05_EL5042_E11, WcState^WcState
+        , Enc^Inputs^In^nDataIn1, TIID^Device 1 (EtherCAT)^K4S08_DRL_02_E0_EK1200^K4S08_DRL_02_E4_EK1122^K4S08_DRL_05_E0_EK1100^DRL_05_EL5042_E11, FB Inputs Channel 1^Position
+        , Enc^Inputs^In^nDataIn1[0], TIID^Device 1 (EtherCAT)^K4S08_DRL_02_E0_EK1200^K4S08_DRL_02_E4_EK1122^K4S08_DRL_05_E0_EK1100^DRL_05_EL7047_E9, ENC Status compact^Counter value
+        , Enc^Inputs^In^nDataIn1[0], TIID^Device 1 (EtherCAT)^K4S08_DRL_02_E0_EK1200^K4S08_DRL_02_E4_EK1122^K4S08_DRL_05_E0_EK1100^DRL_05_EL7047_E12, ENC Status compact^Counter value
+        , Enc^Inputs^In^nDataIn2[0], TIID^Device 1 (EtherCAT)^K4S08_DRL_02_E0_EK1200^K4S08_DRL_02_E4_EK1122^K4S08_DRL_05_E0_EK1100^DRL_05_EL7047_E9, ENC Status compact^Latch value
+        , Enc^Inputs^In^nDataIn2[0], TIID^Device 1 (EtherCAT)^K4S08_DRL_02_E0_EK1200^K4S08_DRL_02_E4_EK1122^K4S08_DRL_05_E0_EK1100^DRL_05_EL7047_E12, ENC Status compact^Latch value
+        , Enc^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^K4S08_DRL_02_E0_EK1200^K4S08_DRL_02_E4_EK1122^K4S08_DRL_05_E0_EK1100^DRL_05_EL7047_E9, ENC Status compact^Status^Counter overflow
+        , Enc^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^K4S08_DRL_02_E0_EK1200^K4S08_DRL_02_E4_EK1122^K4S08_DRL_05_E0_EK1100^DRL_05_EL7047_E9, ENC Status compact^Status^Counter underflow
+        , Enc^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^K4S08_DRL_02_E0_EK1200^K4S08_DRL_02_E4_EK1122^K4S08_DRL_05_E0_EK1100^DRL_05_EL7047_E9, ENC Status compact^Status^Extrapolation stall
+        , Enc^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^K4S08_DRL_02_E0_EK1200^K4S08_DRL_02_E4_EK1122^K4S08_DRL_05_E0_EK1100^DRL_05_EL7047_E9, ENC Status compact^Status^Latch C valid
+        , Enc^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^K4S08_DRL_02_E0_EK1200^K4S08_DRL_02_E4_EK1122^K4S08_DRL_05_E0_EK1100^DRL_05_EL7047_E9, ENC Status compact^Status^Latch extern valid
+        , Enc^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^K4S08_DRL_02_E0_EK1200^K4S08_DRL_02_E4_EK1122^K4S08_DRL_05_E0_EK1100^DRL_05_EL7047_E9, ENC Status compact^Status^Set counter done
+        , Enc^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^K4S08_DRL_02_E0_EK1200^K4S08_DRL_02_E4_EK1122^K4S08_DRL_05_E0_EK1100^DRL_05_EL5042_E11, FB Inputs Channel 1^Status^Diag
+        , Enc^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^K4S08_DRL_02_E0_EK1200^K4S08_DRL_02_E4_EK1122^K4S08_DRL_05_E0_EK1100^DRL_05_EL5042_E11, FB Inputs Channel 1^Status^Error
+        , Enc^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^K4S08_DRL_02_E0_EK1200^K4S08_DRL_02_E4_EK1122^K4S08_DRL_05_E0_EK1100^DRL_05_EL5042_E11, FB Inputs Channel 1^Status^Input cycle counter
+        , Enc^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^K4S08_DRL_02_E0_EK1200^K4S08_DRL_02_E4_EK1122^K4S08_DRL_05_E0_EK1100^DRL_05_EL5042_E11, FB Inputs Channel 1^Status^Ready
+        , Enc^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^K4S08_DRL_02_E0_EK1200^K4S08_DRL_02_E4_EK1122^K4S08_DRL_05_E0_EK1100^DRL_05_EL5042_E11, FB Inputs Channel 1^Status^TxPDO State
+        , Enc^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^K4S08_DRL_02_E0_EK1200^K4S08_DRL_02_E4_EK1122^K4S08_DRL_05_E0_EK1100^DRL_05_EL5042_E11, FB Inputs Channel 1^Status^Warning
+        , Enc^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^K4S08_DRL_02_E0_EK1200^K4S08_DRL_02_E4_EK1122^K4S08_DRL_05_E0_EK1100^DRL_05_EL7047_E12, ENC Status compact^Status^Counter overflow
+        , Enc^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^K4S08_DRL_02_E0_EK1200^K4S08_DRL_02_E4_EK1122^K4S08_DRL_05_E0_EK1100^DRL_05_EL7047_E12, ENC Status compact^Status^Counter underflow
+        , Enc^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^K4S08_DRL_02_E0_EK1200^K4S08_DRL_02_E4_EK1122^K4S08_DRL_05_E0_EK1100^DRL_05_EL7047_E12, ENC Status compact^Status^Extrapolation stall
+        , Enc^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^K4S08_DRL_02_E0_EK1200^K4S08_DRL_02_E4_EK1122^K4S08_DRL_05_E0_EK1100^DRL_05_EL7047_E12, ENC Status compact^Status^Latch C valid
+        , Enc^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^K4S08_DRL_02_E0_EK1200^K4S08_DRL_02_E4_EK1122^K4S08_DRL_05_E0_EK1100^DRL_05_EL7047_E12, ENC Status compact^Status^Latch extern valid
+        , Enc^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^K4S08_DRL_02_E0_EK1200^K4S08_DRL_02_E4_EK1122^K4S08_DRL_05_E0_EK1100^DRL_05_EL7047_E12, ENC Status compact^Status^Set counter done
+        , Enc^Inputs^In^nState2, TIID^Device 1 (EtherCAT)^K4S08_DRL_02_E0_EK1200^K4S08_DRL_02_E4_EK1122^K4S08_DRL_05_E0_EK1100^DRL_05_EL7047_E9, ENC Status compact^Status^Status of extern latch
+        , Enc^Inputs^In^nState2, TIID^Device 1 (EtherCAT)^K4S08_DRL_02_E0_EK1200^K4S08_DRL_02_E4_EK1122^K4S08_DRL_05_E0_EK1100^DRL_05_EL7047_E9, ENC Status compact^Status^Status of input A
+        , Enc^Inputs^In^nState2, TIID^Device 1 (EtherCAT)^K4S08_DRL_02_E0_EK1200^K4S08_DRL_02_E4_EK1122^K4S08_DRL_05_E0_EK1100^DRL_05_EL7047_E9, ENC Status compact^Status^Status of input B
+        , Enc^Inputs^In^nState2, TIID^Device 1 (EtherCAT)^K4S08_DRL_02_E0_EK1200^K4S08_DRL_02_E4_EK1122^K4S08_DRL_05_E0_EK1100^DRL_05_EL7047_E9, ENC Status compact^Status^Status of input C
+        , Enc^Inputs^In^nState2, TIID^Device 1 (EtherCAT)^K4S08_DRL_02_E0_EK1200^K4S08_DRL_02_E4_EK1122^K4S08_DRL_05_E0_EK1100^DRL_05_EL7047_E9, ENC Status compact^Status^Sync error
+        , Enc^Inputs^In^nState2, TIID^Device 1 (EtherCAT)^K4S08_DRL_02_E0_EK1200^K4S08_DRL_02_E4_EK1122^K4S08_DRL_05_E0_EK1100^DRL_05_EL7047_E9, ENC Status compact^Status^TxPDO Toggle
+        , Enc^Inputs^In^nState2, TIID^Device 1 (EtherCAT)^K4S08_DRL_02_E0_EK1200^K4S08_DRL_02_E4_EK1122^K4S08_DRL_05_E0_EK1100^DRL_05_EL7047_E12, ENC Status compact^Status^Status of extern latch
+        , Enc^Inputs^In^nState2, TIID^Device 1 (EtherCAT)^K4S08_DRL_02_E0_EK1200^K4S08_DRL_02_E4_EK1122^K4S08_DRL_05_E0_EK1100^DRL_05_EL7047_E12, ENC Status compact^Status^Status of input A
+        , Enc^Inputs^In^nState2, TIID^Device 1 (EtherCAT)^K4S08_DRL_02_E0_EK1200^K4S08_DRL_02_E4_EK1122^K4S08_DRL_05_E0_EK1100^DRL_05_EL7047_E12, ENC Status compact^Status^Status of input B
+        , Enc^Inputs^In^nState2, TIID^Device 1 (EtherCAT)^K4S08_DRL_02_E0_EK1200^K4S08_DRL_02_E4_EK1122^K4S08_DRL_05_E0_EK1100^DRL_05_EL7047_E12, ENC Status compact^Status^Status of input C
+        , Enc^Inputs^In^nState2, TIID^Device 1 (EtherCAT)^K4S08_DRL_02_E0_EK1200^K4S08_DRL_02_E4_EK1122^K4S08_DRL_05_E0_EK1100^DRL_05_EL7047_E12, ENC Status compact^Status^Sync error
+        , Enc^Inputs^In^nState2, TIID^Device 1 (EtherCAT)^K4S08_DRL_02_E0_EK1200^K4S08_DRL_02_E4_EK1122^K4S08_DRL_05_E0_EK1100^DRL_05_EL7047_E12, ENC Status compact^Status^TxPDO Toggle
+        , Enc^Inputs^In^nState4, TIID^Device 1 (EtherCAT)^K4S08_DRL_02_E0_EK1200^K4S08_DRL_02_E4_EK1122^K4S08_DRL_05_E0_EK1100^DRL_05_EL7047_E9, WcState^InputToggle
+        , Enc^Inputs^In^nState4, TIID^Device 1 (EtherCAT)^K4S08_DRL_02_E0_EK1200^K4S08_DRL_02_E4_EK1122^K4S08_DRL_05_E0_EK1100^DRL_05_EL7047_E9, WcState^WcState
+        , Enc^Inputs^In^nState4, TIID^Device 1 (EtherCAT)^K4S08_DRL_02_E0_EK1200^K4S08_DRL_02_E4_EK1122^K4S08_DRL_05_E0_EK1100^DRL_05_EL7047_E12, WcState^InputToggle
+        , Enc^Inputs^In^nState4, TIID^Device 1 (EtherCAT)^K4S08_DRL_02_E0_EK1200^K4S08_DRL_02_E4_EK1122^K4S08_DRL_05_E0_EK1100^DRL_05_EL7047_E12, WcState^WcState
+        , Enc^Outputs^Out^nCtrl1, TIID^Device 1 (EtherCAT)^K4S08_DRL_02_E0_EK1200^K4S08_DRL_02_E4_EK1122^K4S08_DRL_05_E0_EK1100^DRL_05_EL7047_E9, ENC Control compact^Control^Enable latch C
+        , Enc^Outputs^Out^nCtrl1, TIID^Device 1 (EtherCAT)^K4S08_DRL_02_E0_EK1200^K4S08_DRL_02_E4_EK1122^K4S08_DRL_05_E0_EK1100^DRL_05_EL7047_E9, ENC Control compact^Control^Enable latch extern on negative edge
+        , Enc^Outputs^Out^nCtrl1, TIID^Device 1 (EtherCAT)^K4S08_DRL_02_E0_EK1200^K4S08_DRL_02_E4_EK1122^K4S08_DRL_05_E0_EK1100^DRL_05_EL7047_E9, ENC Control compact^Control^Enable latch extern on positive edge
+        , Enc^Outputs^Out^nCtrl1, TIID^Device 1 (EtherCAT)^K4S08_DRL_02_E0_EK1200^K4S08_DRL_02_E4_EK1122^K4S08_DRL_05_E0_EK1100^DRL_05_EL7047_E9, ENC Control compact^Control^Set counter
+        , Enc^Outputs^Out^nCtrl1, TIID^Device 1 (EtherCAT)^K4S08_DRL_02_E0_EK1200^K4S08_DRL_02_E4_EK1122^K4S08_DRL_05_E0_EK1100^DRL_05_EL7047_E12, ENC Control compact^Control^Enable latch C
+        , Enc^Outputs^Out^nCtrl1, TIID^Device 1 (EtherCAT)^K4S08_DRL_02_E0_EK1200^K4S08_DRL_02_E4_EK1122^K4S08_DRL_05_E0_EK1100^DRL_05_EL7047_E12, ENC Control compact^Control^Enable latch extern on negative edge
+        , Enc^Outputs^Out^nCtrl1, TIID^Device 1 (EtherCAT)^K4S08_DRL_02_E0_EK1200^K4S08_DRL_02_E4_EK1122^K4S08_DRL_05_E0_EK1100^DRL_05_EL7047_E12, ENC Control compact^Control^Enable latch extern on positive edge
+        , Enc^Outputs^Out^nCtrl1, TIID^Device 1 (EtherCAT)^K4S08_DRL_02_E0_EK1200^K4S08_DRL_02_E4_EK1122^K4S08_DRL_05_E0_EK1100^DRL_05_EL7047_E12, ENC Control compact^Control^Set counter
+        , Enc^Outputs^Out^nDataOut1[0], TIID^Device 1 (EtherCAT)^K4S08_DRL_02_E0_EK1200^K4S08_DRL_02_E4_EK1122^K4S08_DRL_05_E0_EK1100^DRL_05_EL7047_E9, ENC Control compact^Set counter value
+        , Enc^Outputs^Out^nDataOut1[0], TIID^Device 1 (EtherCAT)^K4S08_DRL_02_E0_EK1200^K4S08_DRL_02_E4_EK1122^K4S08_DRL_05_E0_EK1100^DRL_05_EL7047_E12, ENC Control compact^Set counter value
+        lcls_dream_motion Instance, PlcTask Inputs^Main.M1.bLimitBackwardEnable, TIID^Device 1 (EtherCAT)^K4S08_DRL_02_E0_EK1200^K4S08_DRL_02_E4_EK1122^K4S08_DRL_05_E0_EK1100^DRL_05_EL7047_E1, STM Status^Status^Digital input 2
+        lcls_dream_motion Instance, PlcTask Inputs^Main.M1.bLimitForwardEnable, TIID^Device 1 (EtherCAT)^K4S08_DRL_02_E0_EK1200^K4S08_DRL_02_E4_EK1122^K4S08_DRL_05_E0_EK1100^DRL_05_EL7047_E1, STM Status^Status^Digital input 1
+        lcls_dream_motion Instance, PlcTask Inputs^Main.M1.nRawEncoderULINT, TIID^Device 1 (EtherCAT)^K4S08_DRL_02_E0_EK1200^K4S08_DRL_02_E4_EK1122^K4S08_DRL_05_E0_EK1100^DRL_05_EL5042_E2, FB Inputs Channel 1^Position
+        lcls_dream_motion Instance, PlcTask Inputs^Main.M2.bLimitBackwardEnable, TIID^Device 1 (EtherCAT)^K4S08_DRL_02_E0_EK1200^K4S08_DRL_02_E4_EK1122^K4S08_DRL_05_E0_EK1100^DRL_05_EL7047_E3, STM Status^Status^Digital input 2
+        lcls_dream_motion Instance, PlcTask Inputs^Main.M2.bLimitForwardEnable, TIID^Device 1 (EtherCAT)^K4S08_DRL_02_E0_EK1200^K4S08_DRL_02_E4_EK1122^K4S08_DRL_05_E0_EK1100^DRL_05_EL7047_E3, STM Status^Status^Digital input 1
+        lcls_dream_motion Instance, PlcTask Inputs^Main.M2.nRawEncoderULINT, TIID^Device 1 (EtherCAT)^K4S08_DRL_02_E0_EK1200^K4S08_DRL_02_E4_EK1122^K4S08_DRL_05_E0_EK1100^DRL_05_EL5042_E2, FB Inputs Channel 2^Position
+        lcls_dream_motion Instance, PlcTask Inputs^Main.M3.bLimitBackwardEnable, TIID^Device 1 (EtherCAT)^K4S08_DRL_02_E0_EK1200^K4S08_DRL_02_E4_EK1122^K4S08_DRL_05_E0_EK1100^DRL_05_EL7047_E4, STM Status^Status^Digital input 2
+        lcls_dream_motion Instance, PlcTask Inputs^Main.M3.bLimitForwardEnable, TIID^Device 1 (EtherCAT)^K4S08_DRL_02_E0_EK1200^K4S08_DRL_02_E4_EK1122^K4S08_DRL_05_E0_EK1100^DRL_05_EL7047_E4, STM Status^Status^Digital input 1
+        lcls_dream_motion Instance, PlcTask Inputs^Main.M3.nRawEncoderULINT, TIID^Device 1 (EtherCAT)^K4S08_DRL_02_E0_EK1200^K4S08_DRL_02_E4_EK1122^K4S08_DRL_05_E0_EK1100^DRL_05_EL5042_E5, FB Inputs Channel 1^Position
+        lcls_dream_motion Instance, PlcTask Inputs^Main.M4.bLimitBackwardEnable, TIID^Device 1 (EtherCAT)^K4S08_DRL_02_E0_EK1200^K4S08_DRL_02_E4_EK1122^K4S08_DRL_05_E0_EK1100^DRL_05_EL7047_E6, STM Status^Status^Digital input 2
+        lcls_dream_motion Instance, PlcTask Inputs^Main.M4.bLimitForwardEnable, TIID^Device 1 (EtherCAT)^K4S08_DRL_02_E0_EK1200^K4S08_DRL_02_E4_EK1122^K4S08_DRL_05_E0_EK1100^DRL_05_EL7047_E6, STM Status^Status^Digital input 1
+        lcls_dream_motion Instance, PlcTask Inputs^Main.M4.nRawEncoderULINT, TIID^Device 1 (EtherCAT)^K4S08_DRL_02_E0_EK1200^K4S08_DRL_02_E4_EK1122^K4S08_DRL_05_E0_EK1100^DRL_05_EL5042_E5, FB Inputs Channel 2^Position
+        lcls_dream_motion Instance, PlcTask Inputs^Main.M5.bLimitBackwardEnable, TIID^Device 1 (EtherCAT)^K4S08_DRL_02_E0_EK1200^K4S08_DRL_02_E4_EK1122^K4S08_DRL_05_E0_EK1100^DRL_05_EL7047_E7, STM Status^Status^Digital input 2
+        lcls_dream_motion Instance, PlcTask Inputs^Main.M5.bLimitForwardEnable, TIID^Device 1 (EtherCAT)^K4S08_DRL_02_E0_EK1200^K4S08_DRL_02_E4_EK1122^K4S08_DRL_05_E0_EK1100^DRL_05_EL7047_E7, STM Status^Status^Digital input 1
+        lcls_dream_motion Instance, PlcTask Inputs^Main.M5.nRawEncoderULINT, TIID^Device 1 (EtherCAT)^K4S08_DRL_02_E0_EK1200^K4S08_DRL_02_E4_EK1122^K4S08_DRL_05_E0_EK1100^DRL_05_EL5042_E8, FB Inputs Channel 1^Position
+        lcls_dream_motion Instance, PlcTask Inputs^Main.M6.Axis.NcToPlc, TINC^NC-Task 1^Axes^M6_GSJN-MMS-X, Outputs^ToPlc
+        lcls_dream_motion Instance, PlcTask Inputs^Main.M6.bLimitBackwardEnable, TIID^Device 1 (EtherCAT)^K4S08_DRL_02_E0_EK1200^K4S08_DRL_02_E4_EK1122^K4S08_DRL_05_E0_EK1100^DRL_05_EL7047_E9, STM Status^Status^Digital input 2
+        lcls_dream_motion Instance, PlcTask Inputs^Main.M6.bLimitForwardEnable, TIID^Device 1 (EtherCAT)^K4S08_DRL_02_E0_EK1200^K4S08_DRL_02_E4_EK1122^K4S08_DRL_05_E0_EK1100^DRL_05_EL7047_E9, STM Status^Status^Digital input 1
+        lcls_dream_motion Instance, PlcTask Inputs^Main.M6.nRawEncoderULINT, TIID^Device 1 (EtherCAT)^K4S08_DRL_02_E0_EK1200^K4S08_DRL_02_E4_EK1122^K4S08_DRL_05_E0_EK1100^DRL_05_EL5042_E8, FB Inputs Channel 2^Position
+        lcls_dream_motion Instance, PlcTask Inputs^Main.M7.Axis.NcToPlc, TINC^NC-Task 1^Axes^M7_GSJN-MMS-Y, Outputs^ToPlc
+        lcls_dream_motion Instance, PlcTask Inputs^Main.M7.bLimitBackwardEnable, TIID^Device 1 (EtherCAT)^K4S08_DRL_02_E0_EK1200^K4S08_DRL_02_E4_EK1122^K4S08_DRL_05_E0_EK1100^DRL_05_EL7047_E10, STM Status^Status^Digital input 1
+        lcls_dream_motion Instance, PlcTask Inputs^Main.M7.bLimitForwardEnable, TIID^Device 1 (EtherCAT)^K4S08_DRL_02_E0_EK1200^K4S08_DRL_02_E4_EK1122^K4S08_DRL_05_E0_EK1100^DRL_05_EL7047_E10, STM Status^Status^Digital input 2
+        lcls_dream_motion Instance, PlcTask Inputs^Main.M7.nRawEncoderULINT, TIID^Device 1 (EtherCAT)^K4S08_DRL_02_E0_EK1200^K4S08_DRL_02_E4_EK1122^K4S08_DRL_05_E0_EK1100^DRL_05_EL5042_E11, FB Inputs Channel 1^Position
+        lcls_dream_motion Instance, PlcTask Inputs^Main.M8.bLimitBackwardEnable, TIID^Device 1 (EtherCAT)^K4S08_DRL_02_E0_EK1200^K4S08_DRL_02_E4_EK1122^K4S08_DRL_05_E0_EK1100^DRL_05_EL7047_E12, STM Status^Status^Digital input 2
+        lcls_dream_motion Instance, PlcTask Inputs^Main.M8.bLimitForwardEnable, TIID^Device 1 (EtherCAT)^K4S08_DRL_02_E0_EK1200^K4S08_DRL_02_E4_EK1122^K4S08_DRL_05_E0_EK1100^DRL_05_EL7047_E12, STM Status^Status^Digital input 1
+        lcls_dream_motion Instance, PlcTask Inputs^Main.M8.nRawEncoderULINT, TIID^Device 1 (EtherCAT)^K4S08_DRL_02_E0_EK1200^K4S08_DRL_02_E4_EK1122^K4S08_DRL_05_E0_EK1100^DRL_05_EL5042_E11, FB Inputs Channel 2^Position
+        lcls_dream_motion Instance, PlcTask Outputs^Main.M6.Axis.PlcToNc, TINC^NC-Task 1^Axes^M6_GSJN-MMS-X, Inputs^FromPlc
+        lcls_dream_motion Instance, PlcTask Outputs^Main.M7.Axis.PlcToNc, TINC^NC-Task 1^Axes^M7_GSJN-MMS-Y, Inputs^FromPlc
