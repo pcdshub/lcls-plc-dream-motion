@@ -1,0 +1,197 @@
+
+NC Settings
+-----------
+
+.. csv-table::
+    :header: Axis ID, Name
+    :align: center
+
+        1, M1 -MMS-Y
+        2, M2 - Coil Roll
+        3, M3 - Coil Yaw
+        4, M4
+        5, M5
+        6, M6_GSJN-MMS-X
+        7, M7_GSJN-MMS-Y
+        8, M8_GSJN-MMS-Z
+
+
+
+Axis 1: M1 -MMS-Y
+^^^^^^^^^^^^^^^^^
+
+.. csv-table::
+    :header: Setting, Value
+    :align: center
+
+    Axis ID, 1
+    Name, M1 -MMS-Y
+    AxisFolder, Main Chamber
+    AxisType, 1
+    CreateSymbols, true
+    Dynamic:DelayTime, 0.008
+    Enc:EncType, 29
+    Enc:Inc:RefSoftSyncMask, #x0000ffff
+    Enc:MaxCount, #xffffffff
+    Enc:ScaleFactorNumerator, 5e-05
+    Id, 1
+    OtherSettings:AllowMotionCmdToSlave, true
+    Velo:Maximum, 2.5
+
+
+
+Axis 2: M2 - Coil Roll
+^^^^^^^^^^^^^^^^^^^^^^
+
+.. csv-table::
+    :header: Setting, Value
+    :align: center
+
+    Axis ID, 2
+    Name, M2 - Coil Roll
+    AxisType, 1
+    CreateSymbols, true
+    Enc:EncType, 4
+    Enc:Inc:RefMode, 2
+    Enc:Inc:RefSoftSyncMask, #x0000ffff
+    Enc:MaxCount, #x0000ffff
+    Enc:ScaleFactorNumerator, 0.0001240234375
+    Id, 2
+    OtherSettings:AllowMotionCmdToSlave, true
+    Velo:Maximum, 16
+
+
+
+Axis 3: M3 - Coil Yaw
+^^^^^^^^^^^^^^^^^^^^^
+
+.. csv-table::
+    :header: Setting, Value
+    :align: center
+
+    Axis ID, 3
+    Name, M3 - Coil Yaw
+    AxisType, 1
+    CreateSymbols, true
+    Dynamic:AccelerationMaximum, 1500
+    Enc:EncType, 4
+    Enc:Inc:RefMode, 2
+    Enc:Inc:RefSoftSyncMask, #x0000ffff
+    Enc:MaxCount, #x0000ffff
+    Enc:ScaleFactorNumerator, 0.0001240234375
+    Id, 3
+    OtherSettings:AllowMotionCmdToSlave, true
+    Velo:Maximum, 16
+
+
+
+Axis 4: M4
+^^^^^^^^^^
+
+.. csv-table::
+    :header: Setting, Value
+    :align: center
+
+    Axis ID, 4
+    Name, M4
+    AxisType, 1
+    CreateSymbols, true
+    Enc:EncType, 29
+    Enc:Inc:RefSoftSyncMask, #x0000ffff
+    Enc:MaxCount, #xffffffff
+    Id, 4
+    OtherSettings:AllowMotionCmdToSlave, true
+
+
+
+Axis 5: M5
+^^^^^^^^^^
+
+.. csv-table::
+    :header: Setting, Value
+    :align: center
+
+    Axis ID, 5
+    Name, M5
+    AxisType, 1
+    CreateSymbols, true
+    Enc:EncType, 29
+    Enc:Inc:RefSoftSyncMask, #x0000ffff
+    Enc:MaxCount, #xffffffff
+    Enc:MaxCountHighDWord, #x0000001f
+    Id, 5
+    OtherSettings:AllowMotionCmdToSlave, true
+
+
+
+Axis 6: M6_GSJN-MMS-X
+^^^^^^^^^^^^^^^^^^^^^
+
+.. csv-table::
+    :header: Setting, Value
+    :align: center
+
+    Axis ID, 6
+    Name, M6_GSJN-MMS-X
+    AxisFolder, Gas Jet Nozzel XYZ
+    AxisType, 1
+    CreateSymbols, true
+    Enc:EncType, 4
+    Enc:Inc:RefSoftSyncMask, #x0000ffff
+    Enc:MaxCount, #x0000ffff
+    Enc:ScaleFactorNumerator, 9.375e-05
+    Id, 6
+    OtherSettings:AllowMotionCmdToSlave, true
+    Velo:Maximum, 5
+
+
+
+Axis 7: M7_GSJN-MMS-Y
+^^^^^^^^^^^^^^^^^^^^^
+
+.. csv-table::
+    :header: Setting, Value
+    :align: center
+
+    Axis ID, 7
+    Name, M7_GSJN-MMS-Y
+    AxisFolder, Gas Jet Nozzel XYZ
+    AxisType, 1
+    CreateSymbols, true
+    Enc:EncType, 29
+    Enc:Inc:RefSoftSyncMask, #x0000ffff
+    Enc:MaxCount, #xffffffff
+    Enc:Offset, -33550929.5325
+    Enc:ScaleFactorNumerator, 0.000244140625
+    Id, 7
+    OtherSettings:AllowMotionCmdToSlave, true
+    OtherSettings:PulseDistanceNeg, 1
+    OtherSettings:PulseDistancePos, 1
+    Velo:FastManual, 2
+    Velo:Maximum, 5.08
+    Velo:SlowManual, 1
+
+
+
+Axis 8: M8_GSJN-MMS-Z
+^^^^^^^^^^^^^^^^^^^^^
+
+.. csv-table::
+    :header: Setting, Value
+    :align: center
+
+    Axis ID, 8
+    Name, M8_GSJN-MMS-Z
+    AxisFolder, Gas Jet Nozzel XYZ
+    AxisType, 1
+    CreateSymbols, true
+    Enc:EncType, 4
+    Enc:Inc:RefMode, 2
+    Enc:Inc:RefSoftSyncMask, #x0000ffff
+    Enc:MaxCount, #x0000ffff
+    Enc:ScaleFactorNumerator, 9.375e-05
+    Id, 8
+    OtherSettings:AllowMotionCmdToSlave, true
+    Velo:Maximum, 5
+
+
