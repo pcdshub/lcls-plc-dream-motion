@@ -1321,7 +1321,7 @@ External Setpoint Generation:
 			</Relations>
 		</DataType>
 	</DataTypes>
-	<Axis Id="4" CreateSymbols="true" AxisType="1">
+	<Axis Id="5" CreateSymbols="true" AxisType="1">
 		<Name>__FILENAME__</Name>
 		<AxisPara>
 			<OtherSettings AllowMotionCmdToSlave="true"/>
@@ -1554,7 +1554,7 @@ External Setpoint Generation:
 	</Axis>
 	<Mappings>
 		<OwnerA>
-			<OwnerB Name="TIID^Device 1 (EtherCAT)^K4S08_DRL_02_E0_EK1200^K4S08_DRL_02_E4_EK1122^K4S08_DRL_05_E0_EK1100^DREAM-GSJN-Y-EL7047-E10">
+			<OwnerB Name="TIID^Device 1 (EtherCAT)^K4S08_DRL_02_E0_EK1200^K4S08_DRL_02_E4_EK1122^K4S08_DRL_05_E0_EK1100^DREAM-GSJN-Z-EL7047-E12">
 				<Link VarA="Drive^Inputs^In^nState1" VarB="STM Status^Status^Error" Size="1" OffsA="3"/>
 				<Link VarA="Drive^Inputs^In^nState1" VarB="STM Status^Status^Motor stall" Size="1" OffsA="7"/>
 				<Link VarA="Drive^Inputs^In^nState1" VarB="STM Status^Status^Moving negative" Size="1" OffsA="5"/>
