@@ -22,7 +22,7 @@
 		<Axis File="M4.xti" Id="4"/>
 		<Axis File="M5.xti" Id="5"/>
 		<Axis File="M6_GSJN-MMS-X.xti" Id="6"/>
-		<Axis File="M7.xti" Id="7"/>
-		<Axis File="M8.xti" Id="8"/>
+		<Axis File="M7_GSJN-MMS-Y.xti" Id="7"/>
+		<Axis File="M8_GSJN-MMS-Z.xti" Id="8"/>
 	</NC>
 </TcSmItem>

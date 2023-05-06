@@ -1905,6 +1905,8 @@ External Setpoint Generation:
 			<OwnerB Name="TIID^Device 1 (EtherCAT)^K4S08_DRL_02_E0_EK1200^K4S08_DRL_02_E4_EK1122^K4S08_DRL_05_E0_EK1100^DRL_05_EL7047_E12">
 				<Link VarA="PlcTask Inputs^Main.M8.bLimitBackwardEnable" VarB="STM Status^Status^Digital input 2" AutoLink="true"/>
 				<Link VarA="PlcTask Inputs^Main.M8.bLimitForwardEnable" VarB="STM Status^Status^Digital input 1" AutoLink="true"/>
+				<Link VarA="PlcTask Inputs^PRG_MAIN.extendedLS" VarB="STM Status^Status^Digital input 2"/>
+				<Link VarA="PlcTask Inputs^PRG_MAIN.retractedLS" VarB="STM Status^Status^Digital input 1"/>
 			</OwnerB>
 			<OwnerB Name="TIID^Device 1 (EtherCAT)^K4S08_DRL_02_E0_EK1200^K4S08_DRL_02_E4_EK1122^K4S08_DRL_05_E0_EK1100^DRL_05_EL7047_E3">
 				<Link VarA="PlcTask Inputs^Main.M2.bLimitBackwardEnable" VarB="STM Status^Status^Digital input 2" AutoLink="true"/>
@@ -1929,6 +1931,10 @@ External Setpoint Generation:
 			<OwnerB Name="TINC^NC-Task 1^Axes^M6_GSJN-MMS-X">
 				<Link VarA="PlcTask Inputs^Main.M6.Axis.NcToPlc" VarB="Outputs^ToPlc"/>
 				<Link VarA="PlcTask Outputs^Main.M6.Axis.PlcToNc" VarB="Inputs^FromPlc"/>
+			</OwnerB>
+			<OwnerB Name="TINC^NC-Task 1^Axes^M8_GSJN-MMS-Z">
+				<Link VarA="PlcTask Inputs^PRG_MAIN.axis.NcToPlc" VarB="Outputs^ToPlc"/>
+				<Link VarA="PlcTask Outputs^PRG_MAIN.axis.PlcToNc" VarB="Inputs^FromPlc"/>
 			</OwnerB>
 		</OwnerA>
 	</Mappings>
