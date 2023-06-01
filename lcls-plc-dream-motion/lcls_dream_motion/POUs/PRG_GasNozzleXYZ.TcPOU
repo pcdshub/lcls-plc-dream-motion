@@ -19,6 +19,16 @@ END_VAR
     Main.M6.nBrakeMode := ENUM_StageBrakeMode.NO_BRAKE;
     Main.M6.nEnableMode := ENUM_StageEnableMode.DURING_MOTION;
 	END_IF
+	
+// M7
+
+IF ( bInit) THEN
+    bInit := FALSE;
+    Main.M7.bHardwareEnable := TRUE;
+    Main.M7.bPowerSelf := TRUE;
+    Main.M7.nBrakeMode := ENUM_StageBrakeMode.NO_BRAKE;
+    Main.M7.nEnableMode := ENUM_StageEnableMode.DURING_MOTION;
+	END_IF
 //
 fb_GSJN_X(stMotionStage:=Main.M6);
 fb_GSJN_Y(stMotionStage:=Main.M7);
@@ -27,7 +37,11 @@ fb_GSJN_Z(stMotionStage:=Main.M8);]]></ST>
     <LineIds Name="PRG_GasNozzleXYZ">
       <LineId Id="15" Count="4" />
       <LineId Id="5" Count="0" />
-      <LineId Id="21" Count="1" />
+      <LineId Id="21" Count="0" />
+      <LineId Id="36" Count="1" />
+      <LineId Id="39" Count="6" />
+      <LineId Id="38" Count="0" />
+      <LineId Id="22" Count="0" />
       <LineId Id="20" Count="0" />
       <LineId Id="25" Count="1" />
     </LineIds>
