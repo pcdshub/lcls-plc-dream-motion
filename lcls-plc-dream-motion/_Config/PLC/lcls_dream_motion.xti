@@ -2064,6 +2064,10 @@ External Setpoint Generation:
 				<Link VarA="PlcTask Inputs^Main.M6.Axis.NcToPlc" VarB="Outputs^ToPlc"/>
 				<Link VarA="PlcTask Outputs^Main.M6.Axis.PlcToNc" VarB="Inputs^FromPlc"/>
 			</OwnerB>
+			<OwnerB Name="TINC^NC-Task 1^Axes^M7_GSJN-MMS-Y">
+				<Link VarA="PlcTask Inputs^Main.M7.Axis.NcToPlc" VarB="Outputs^ToPlc"/>
+				<Link VarA="PlcTask Outputs^Main.M7.Axis.PlcToNc" VarB="Inputs^FromPlc"/>
+			</OwnerB>
 		</OwnerA>
 	</Mappings>
 </TcSmItem>
