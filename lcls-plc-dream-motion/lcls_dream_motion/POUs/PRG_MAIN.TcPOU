@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4022.18">
+  <POU Name="PRG_MAIN" Id="{ed295dcb-e9ae-41f5-8c35-f2cb9f5cb69e}" SpecialFunc="None">
+    <Declaration><![CDATA[PROGRAM PRG_MAIN
+VAR
+    // variables for testing
+    axis: AXIS_REF;
+    power: MC_POWER;
+
+    retractedLS AT %I* : BOOL;
+    extendedLS At %I* :BOOL;
+
+END_VAR
+]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[(*
+   This is to test axis safely by both limit switch enabled.
+   manually link the variables "retractedLS" and "extendedLS" to the imit switches inputs
+
+   Standard limit switches are NC, enable/disable both directions directly by limit switches
+  if limit swithes are NO, enable/disable the related direction using reversed limit switch reading.
+
+*)
+power(Axis:=axis, Enable_Positive := retractedLS or extendedLS, Enable_Negative:= extendedLS or retractedLS);
+//power(Axis:=axis, Enable_Positive := NOT retractedLS, Enable_Negative:= NOT extendedLS);
+
+PRG_GasNozzleXYZ();]]></ST>
+    </Implementation>
+  </POU>
+</TcPlcObject>

@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4022.18">
+  <POU Name="PRG_GasNozzleXYZ" Id="{49638b9b-99e5-4edd-813e-54766bca2205}" SpecialFunc="None">
+    <Declaration><![CDATA[PROGRAM PRG_GasNozzleXYZ
+VAR
+    fb_GSJN_X : FB_MotionStage;
+    fb_GSJN_Y : FB_MotionStage;
+    fb_GSJN_Z : FB_MotionStage;
+
+    bInit : BOOl := TRUE;
+
+END_VAR
+]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[IF ( bInit) THEN
+    bInit := FALSE;
+    Main.M6.bHardwareEnable := TRUE;
+    Main.M6.bPowerSelf := TRUE;
+    Main.M6.nBrakeMode := ENUM_StageBrakeMode.NO_BRAKE;
+    Main.M6.nEnableMode := ENUM_StageEnableMode.DURING_MOTION;
+    END_IF
+
+// M7
+
+IF ( bInit) THEN
+    bInit := FALSE;
+    Main.M7.bHardwareEnable := TRUE;
+    Main.M7.bPowerSelf := TRUE;
+    Main.M7.nBrakeMode := ENUM_StageBrakeMode.NO_BRAKE;
+    Main.M7.nEnableMode := ENUM_StageEnableMode.DURING_MOTION;
+    END_IF
+//
+fb_GSJN_X(stMotionStage:=Main.M6);
+fb_GSJN_Y(stMotionStage:=Main.M7);
+fb_GSJN_Z(stMotionStage:=Main.M8);]]></ST>
+    </Implementation>
+  </POU>
+</TcPlcObject>
