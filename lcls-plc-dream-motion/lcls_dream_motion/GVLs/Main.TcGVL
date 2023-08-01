@@ -28,14 +28,14 @@ VAR_GLOBAL
     M4: DUT_MotionStage := (sName := ' ');
 
     {attribute 'pytmc' := 'pv: '}
-    {attribute 'TcLinkTo' := '.bLimitForwardEnable  := TIIB[DRL_05_EL7047_E7]^STM Status^Status^Digital input 1;
-                              .bLimitBackwardEnable := TIIB[DRL_05_EL7047_E7]^STM Status^Status^Digital input 2;
+    {attribute 'TcLinkTo' := '.bLimitForwardEnable  := TIIB[DRL_05_EL7047_E7]^STM Status^Status^Digital input 2;
+                              .bLimitBackwardEnable := TIIB[DRL_05_EL7047_E7]^STM Status^Status^Digital input 1;
                               .nRawEncoderULINT     := TIIB[DRL_05_EL5042_E8]^FB Inputs Channel 1^Position'}
     M5: DUT_MotionStage := (sName := ' ');
 
     {attribute 'pytmc' := 'pv: DREAM:GSJN:MMS:X'}
-    {attribute 'TcLinkTo' := '.bLimitForwardEnable  := TIIB[DRL_05_EL7047_E9]^STM Status^Status^Digital input 1;
-                              .bLimitBackwardEnable := TIIB[DRL_05_EL7047_E9]^STM Status^Status^Digital input 2;
+    {attribute 'TcLinkTo' := '.bLimitForwardEnable  := TIIB[DRL_05_EL7047_E9]^STM Status^Status^Digital input 2;
+                              .bLimitBackwardEnable := TIIB[DRL_05_EL7047_E9]^STM Status^Status^Digital input 1;
                               .nRawEncoderULINT     := TIIB[DRL_05_EL5042_E8]^FB Inputs Channel 2^Position'}
     M6: DUT_MotionStage := (sName := 'DREAM:GSJN:MMS:X');
 

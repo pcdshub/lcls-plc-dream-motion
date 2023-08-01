@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<TcModuleClass xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.beckhoff.com/schemas/2009/05/TcModuleClass" Hash="{E3BC3302-999B-3FCE-7FA7-61C39C34E4B8}" GeneratedBy="TwinCAT XAE Plc">
+<TcModuleClass xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.beckhoff.com/schemas/2009/05/TcModuleClass" Hash="{3D316290-B454-5DB5-2819-DF07CF62EA5B}" GeneratedBy="TwinCAT XAE Plc">
   <DataTypes>
     <DataType>
       <Name Namespace="Tc2_System">T_AmsNetID</Name>
@@ -14866,11 +14866,6 @@ contributing fast faults, unless the FFO is currently vetoed.
           <Type>DINT</Type>
           <BitSize>32</BitSize>
         </Local>
-        <Local>
-          <Name>__Index__0</Name>
-          <Type>DINT</Type>
-          <BitSize>32</BitSize>
-        </Local>
       </Method>
       <Method>
         <Name>FindTestSuiteInstancePath</Name>
@@ -15129,11 +15124,6 @@ contributing fast faults, unless the FFO is currently vetoed.
           <Type>DINT</Type>
           <BitSize>32</BitSize>
         </Local>
-        <Local>
-          <Name>__Index__0</Name>
-          <Type>DINT</Type>
-          <BitSize>32</BitSize>
-        </Local>
       </Method>
       <Method>
         <Name>AssertArrayEquals_BYTE</Name>
@@ -15235,11 +15225,6 @@ contributing fast faults, unless the FFO is currently vetoed.
         </Local>
         <Local>
           <Name>ActualsIndex</Name>
-          <Type>DINT</Type>
-          <BitSize>32</BitSize>
-        </Local>
-        <Local>
-          <Name>__Index__0</Name>
           <Type>DINT</Type>
           <BitSize>32</BitSize>
         </Local>
@@ -15399,11 +15384,6 @@ contributing fast faults, unless the FFO is currently vetoed.
           <Type>DINT</Type>
           <BitSize>32</BitSize>
         </Local>
-        <Local>
-          <Name>__Index__0</Name>
-          <Type>DINT</Type>
-          <BitSize>32</BitSize>
-        </Local>
       </Method>
       <Method>
         <Name>AssertEquals_LTIME</Name>
@@ -15526,11 +15506,6 @@ contributing fast faults, unless the FFO is currently vetoed.
         </Local>
         <Local>
           <Name>ActualsIndex</Name>
-          <Type>DINT</Type>
-          <BitSize>32</BitSize>
-        </Local>
-        <Local>
-          <Name>__Index__0</Name>
           <Type>DINT</Type>
           <BitSize>32</BitSize>
         </Local>
@@ -15672,11 +15647,6 @@ contributing fast faults, unless the FFO is currently vetoed.
         </Local>
         <Local>
           <Name>ActualsIndex</Name>
-          <Type>DINT</Type>
-          <BitSize>32</BitSize>
-        </Local>
-        <Local>
-          <Name>__Index__0</Name>
           <Type>DINT</Type>
           <BitSize>32</BitSize>
         </Local>
@@ -16438,11 +16408,6 @@ contributing fast faults, unless the FFO is currently vetoed.
           <Type>DINT</Type>
           <BitSize>32</BitSize>
         </Local>
-        <Local>
-          <Name>__Index__0</Name>
-          <Type>DINT</Type>
-          <BitSize>32</BitSize>
-        </Local>
       </Method>
       <Method>
         <Name>SetHasStartedRunning</Name>
@@ -16603,11 +16568,6 @@ contributing fast faults, unless the FFO is currently vetoed.
           <Type>DINT</Type>
           <BitSize>32</BitSize>
         </Local>
-        <Local>
-          <Name>__Index__0</Name>
-          <Type>DINT</Type>
-          <BitSize>32</BitSize>
-        </Local>
       </Method>
       <Method>
         <Name>GetHasStartedRunning</Name>
@@ -16710,11 +16670,6 @@ contributing fast faults, unless the FFO is currently vetoed.
         </Local>
         <Local>
           <Name>ActualsIndex</Name>
-          <Type>DINT</Type>
-          <BitSize>32</BitSize>
-        </Local>
-        <Local>
-          <Name>__Index__0</Name>
           <Type>DINT</Type>
           <BitSize>32</BitSize>
         </Local>
@@ -16869,11 +16824,6 @@ contributing fast faults, unless the FFO is currently vetoed.
           <Type>DINT</Type>
           <BitSize>32</BitSize>
         </Local>
-        <Local>
-          <Name>__Index__0</Name>
-          <Type>DINT</Type>
-          <BitSize>32</BitSize>
-        </Local>
       </Method>
       <Method>
         <Name>AssertEquals_DINT</Name>
@@ -16996,11 +16946,6 @@ contributing fast faults, unless the FFO is currently vetoed.
         </Local>
         <Local>
           <Name>ActualsIndex</Name>
-          <Type>DINT</Type>
-          <BitSize>32</BitSize>
-        </Local>
-        <Local>
-          <Name>__Index__0</Name>
           <Type>DINT</Type>
           <BitSize>32</BitSize>
         </Local>
@@ -17176,11 +17121,6 @@ contributing fast faults, unless the FFO is currently vetoed.
         </Local>
         <Local>
           <Name>ActualsIndex</Name>
-          <Type>DINT</Type>
-          <BitSize>32</BitSize>
-        </Local>
-        <Local>
-          <Name>__Index__0</Name>
           <Type>DINT</Type>
           <BitSize>32</BitSize>
         </Local>
@@ -17463,11 +17403,6 @@ contributing fast faults, unless the FFO is currently vetoed.
         </Local>
         <Local>
           <Name>ActualsIndex</Name>
-          <Type>DINT</Type>
-          <BitSize>32</BitSize>
-        </Local>
-        <Local>
-          <Name>__Index__0</Name>
           <Type>DINT</Type>
           <BitSize>32</BitSize>
         </Local>
@@ -18264,11 +18199,6 @@ contributing fast faults, unless the FFO is currently vetoed.
           <Type>DINT</Type>
           <BitSize>32</BitSize>
         </Local>
-        <Local>
-          <Name>__Index__0</Name>
-          <Type>DINT</Type>
-          <BitSize>32</BitSize>
-        </Local>
       </Method>
       <Method>
         <Name>AssertArrayEquals_UDINT</Name>
@@ -18360,11 +18290,6 @@ contributing fast faults, unless the FFO is currently vetoed.
         </Local>
         <Local>
           <Name>ActualsIndex</Name>
-          <Type>DINT</Type>
-          <BitSize>32</BitSize>
-        </Local>
-        <Local>
-          <Name>__Index__0</Name>
           <Type>DINT</Type>
           <BitSize>32</BitSize>
         </Local>
@@ -33475,7 +33400,7 @@ External Setpoint Generation:
           <AreaNo AreaType="InputDst" CreateSymbols="true">0</AreaNo>
           <Name>PlcTask Inputs</Name>
           <ContextId>0</ContextId>
-          <ByteSize>80216064</ByteSize>
+          <ByteSize>80150528</ByteSize>
           <Symbol>
             <Name>PRG_MAIN.retractedLS</Name>
             <BitSize>8</BitSize>
@@ -34697,7 +34622,7 @@ External Setpoint Generation:
           <AreaNo AreaType="OutputSrc" CreateSymbols="true">1</AreaNo>
           <Name>PlcTask Outputs</Name>
           <ContextId>0</ContextId>
-          <ByteSize>80216064</ByteSize>
+          <ByteSize>80150528</ByteSize>
           <Symbol>
             <Name>PRG_MAIN.axis.PlcToNc</Name>
             <BitSize>1024</BitSize>
@@ -35031,7 +34956,7 @@ External Setpoint Generation:
           <AreaNo AreaType="Internal" CreateSymbols="true">3</AreaNo>
           <Name>PlcTask Internal</Name>
           <ContextId>0</ContextId>
-          <ByteSize>80216064</ByteSize>
+          <ByteSize>80150528</ByteSize>
           <Symbol>
             <Name>MOTION_GVL.fbPmpsFileReader</Name>
             <BitSize>928512</BitSize>
@@ -41033,8 +40958,8 @@ External Setpoint Generation:
               </Property>
               <Property>
                 <Name>TcLinkTo</Name>
-                <Value>.bLimitForwardEnable  := TIIB[DRL_05_EL7047_E7]^STM Status^Status^Digital input 1;
-                              .bLimitBackwardEnable := TIIB[DRL_05_EL7047_E7]^STM Status^Status^Digital input 2;
+                <Value>.bLimitForwardEnable  := TIIB[DRL_05_EL7047_E7]^STM Status^Status^Digital input 2;
+                              .bLimitBackwardEnable := TIIB[DRL_05_EL7047_E7]^STM Status^Status^Digital input 1;
                               .nRawEncoderULINT     := TIIB[DRL_05_EL5042_E8]^FB Inputs Channel 1^Position</Value>
               </Property>
               <Property>
@@ -41060,8 +40985,8 @@ External Setpoint Generation:
               </Property>
               <Property>
                 <Name>TcLinkTo</Name>
-                <Value>.bLimitForwardEnable  := TIIB[DRL_05_EL7047_E9]^STM Status^Status^Digital input 1;
-                              .bLimitBackwardEnable := TIIB[DRL_05_EL7047_E9]^STM Status^Status^Digital input 2;
+                <Value>.bLimitForwardEnable  := TIIB[DRL_05_EL7047_E9]^STM Status^Status^Digital input 2;
+                              .bLimitBackwardEnable := TIIB[DRL_05_EL7047_E9]^STM Status^Status^Digital input 1;
                               .nRawEncoderULINT     := TIIB[DRL_05_EL5042_E8]^FB Inputs Channel 2^Position</Value>
               </Property>
               <Property>
@@ -41365,7 +41290,7 @@ External Setpoint Generation:
           <AreaNo AreaType="RetainSrc" CreateSymbols="true">4</AreaNo>
           <Name>PlcTask Retains</Name>
           <ContextId>0</ContextId>
-          <ByteSize>80216064</ByteSize>
+          <ByteSize>80150528</ByteSize>
           <Symbol>
             <Name>PMPS_GVL.SuccessfulPreemption</Name>
             <Comment> Any time BPTM applies a new BP request which is confirmed</Comment>
@@ -41430,15 +41355,15 @@ External Setpoint Generation:
         </Property>
         <Property>
           <Name>ChangeDate</Name>
-          <Value>2023-06-08T13:55:45</Value>
+          <Value>2023-06-21T16:32:18</Value>
         </Property>
         <Property>
           <Name>GeneratedCodeSize</Name>
-          <Value>520192</Value>
+          <Value>475136</Value>
         </Property>
         <Property>
           <Name>GlobalDataSize</Name>
-          <Value>79151104</Value>
+          <Value>79110144</Value>
         </Property>
       </Properties>
     </Module>
