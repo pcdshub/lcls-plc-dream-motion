@@ -29,7 +29,7 @@ IF ( bInit) THEN
     Main.M7.nBrakeMode := ENUM_StageBrakeMode.NO_BRAKE;
     Main.M7.nEnableMode := ENUM_StageEnableMode.DURING_MOTION;
     END_IF
-	
+
 // M8
 
 IF ( bInit) THEN
@@ -39,20 +39,10 @@ IF ( bInit) THEN
     Main.M8.nBrakeMode := ENUM_StageBrakeMode.NO_BRAKE;
     Main.M8.nEnableMode := ENUM_StageEnableMode.DURING_MOTION;
     END_IF
-	
+
 fb_GSJN_X(stMotionStage:=Main.M6);
 fb_GSJN_Y(stMotionStage:=Main.M7);
 fb_GSJN_Z(stMotionStage:=Main.M8);]]></ST>
     </Implementation>
-    <LineIds Name="PRG_GasNozzleXYZ">
-      <LineId Id="3" Count="16" />
-      <LineId Id="32" Count="0" />
-      <LineId Id="20" Count="0" />
-      <LineId Id="34" Count="6" />
-      <LineId Id="33" Count="0" />
-      <LineId Id="41" Count="0" />
-      <LineId Id="21" Count="1" />
-      <LineId Id="2" Count="0" />
-    </LineIds>
   </POU>
 </TcPlcObject>
