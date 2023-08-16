@@ -33,7 +33,7 @@
 		<Image Id="4" AddrType="10" ImageType="3">
 			<Name>Image-2</Name>
 		</Image>
-		<Box File="K4S08_DRL_02_E0_EK1200.xti" Id="6">
+		<Box File="B940_009_R19_DRL_02_E0_EK1200.xti" Id="6">
 			<EtherCAT PortABoxInfo="#x00ffffff"/>
 		</Box>
 		<EtherCAT EnableVirtualSwitch="true" MaxSwitchPorts="2" MaxSwitchFrames="120"/>
