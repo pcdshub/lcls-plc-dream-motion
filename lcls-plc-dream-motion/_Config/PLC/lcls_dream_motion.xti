@@ -1502,6 +1502,26 @@ External Setpoint Generation:
 				<Link VarA="PlcTask Inputs^Main.M6.bLimitBackwardEnable" VarB="STM Status^Status^Digital input 1" AutoLink="true" Size="1"/>
 				<Link VarA="PlcTask Inputs^Main.M6.bLimitForwardEnable" VarB="STM Status^Status^Digital input 2" AutoLink="true" Size="1"/>
 			</OwnerB>
+			<OwnerB Name="TINC^NC-Task 1^Axes^M1">
+				<Link VarA="PlcTask Inputs^Main.M1.Axis.NcToPlc" VarB="Outputs^ToPlc"/>
+				<Link VarA="PlcTask Outputs^Main.M1.Axis.PlcToNc" VarB="Inputs^FromPlc"/>
+			</OwnerB>
+			<OwnerB Name="TINC^NC-Task 1^Axes^M2">
+				<Link VarA="PlcTask Inputs^Main.M2.Axis.NcToPlc" VarB="Outputs^ToPlc"/>
+				<Link VarA="PlcTask Outputs^Main.M2.Axis.PlcToNc" VarB="Inputs^FromPlc"/>
+			</OwnerB>
+			<OwnerB Name="TINC^NC-Task 1^Axes^M3">
+				<Link VarA="PlcTask Inputs^Main.M3.Axis.NcToPlc" VarB="Outputs^ToPlc"/>
+				<Link VarA="PlcTask Outputs^Main.M3.Axis.PlcToNc" VarB="Inputs^FromPlc"/>
+			</OwnerB>
+			<OwnerB Name="TINC^NC-Task 1^Axes^M4">
+				<Link VarA="PlcTask Inputs^Main.M4.Axis.NcToPlc" VarB="Outputs^ToPlc"/>
+				<Link VarA="PlcTask Outputs^Main.M4.Axis.PlcToNc" VarB="Inputs^FromPlc"/>
+			</OwnerB>
+			<OwnerB Name="TINC^NC-Task 1^Axes^M5">
+				<Link VarA="PlcTask Inputs^Main.M5.Axis.NcToPlc" VarB="Outputs^ToPlc"/>
+				<Link VarA="PlcTask Outputs^Main.M5.Axis.PlcToNc" VarB="Inputs^FromPlc"/>
+			</OwnerB>
 			<OwnerB Name="TINC^NC-Task 1^Axes^M6_GSJN-MMS-X">
 				<Link VarA="PlcTask Inputs^Main.M6.Axis.NcToPlc" VarB="Outputs^ToPlc"/>
 				<Link VarA="PlcTask Outputs^Main.M6.Axis.PlcToNc" VarB="Inputs^FromPlc"/>
