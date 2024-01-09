@@ -16,13 +16,16 @@
 		<SvbTask Priority="8" CycleTime="100000" AmsPort="511">
 			<Name>NC- Task 1 SVB</Name>
 		</SvbTask>
-		<Axis File="M1.xti" Id="1"/>
+		<AxisFolder Name="Main Chamber"/>
+		<AxisFolder Name="Gas Jet Nozzel XYZ"/>
+		<AxisFolder Name="Coil Motion"/>
+		<Axis File="M1_MC-Y.xti" Id="1"/>
+		<Axis File="M6_GSJN-MMS-X.xti" Id="6"/>
+		<Axis File="M8_GSJN-MMS-Z.xti" Id="8"/>
 		<Axis File="M2.xti" Id="2"/>
 		<Axis File="M3.xti" Id="3"/>
 		<Axis File="M4.xti" Id="4"/>
 		<Axis File="M5.xti" Id="5"/>
-		<Axis File="M6_GSJN-MMS-X.xti" Id="6"/>
 		<Axis File="M7_GSJN-MMS-Y.xti" Id="7"/>
-		<Axis File="M8_GSJN-MMS-Z.xti" Id="8"/>
 	</NC>
 </TcSmItem>

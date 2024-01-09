@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4022.18">
+  <POU Name="PRG_MainChamber" Id="{44b5b2b4-40eb-49d4-bd3b-945290e559d8}" SpecialFunc="None">
+    <Declaration><![CDATA[PROGRAM PRG_MainChamber
+VAR
+	fb_MC_Y : FB_MotionStage;
+	bInit : BOOL := FALSE;
+END_VAR
+]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[IF ( bInit) THEN
+    bInit := FALSE;
+    Main.M1.bHardwareEnable := TRUE;
+    Main.M1.bPowerSelf := TRUE;
+    Main.M1.nBrakeMode := ENUM_StageBrakeMode.NO_BRAKE;
+    Main.M1.nEnableMode := ENUM_StageEnableMode.DURING_MOTION;
+    END_IF
+	
+fb_MC_Y(stMotionStage := Main.M1);
+]]></ST>
+    </Implementation>
+    <LineIds Name="PRG_MainChamber">
+      <LineId Id="7" Count="5" />
+      <LineId Id="5" Count="0" />
+      <LineId Id="14" Count="2" />
+    </LineIds>
+  </POU>
+</TcPlcObject>
