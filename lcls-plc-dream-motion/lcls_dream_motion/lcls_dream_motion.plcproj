@@ -21,10 +21,13 @@
     <Compile Include="PlcTask.TcTTO">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="POUs\PRG_MAIN.TcPOU">
+    <Compile Include="POUs\PRG_PLC_tasks.TcPOU">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="POUs\PRG_GasNozzleXYZ.TcPOU">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="POUs\PRG_MainChamber.TcPOU">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>

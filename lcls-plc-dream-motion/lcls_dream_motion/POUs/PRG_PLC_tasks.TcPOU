@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4022.18">
-  <POU Name="PRG_MAIN" Id="{ed295dcb-e9ae-41f5-8c35-f2cb9f5cb69e}" SpecialFunc="None">
-    <Declaration><![CDATA[PROGRAM PRG_MAIN
+  <POU Name="PRG_PLC_tasks" Id="{ed295dcb-e9ae-41f5-8c35-f2cb9f5cb69e}" SpecialFunc="None">
+    <Declaration><![CDATA[PROGRAM PRG_PLC_tasks
 VAR
     // variables for testing
     axis: AXIS_REF;
@@ -21,10 +21,17 @@ END_VAR
   if limit swithes are NO, enable/disable the related direction using reversed limit switch reading.
 
 *)
-power(Axis:=axis, Enable_Positive := retractedLS or extendedLS, Enable_Negative:= extendedLS or retractedLS);
+power(Axis:=axis, Enable_Positive := retractedLS and extendedLS, Enable_Negative:= extendedLS and retractedLS);
 //power(Axis:=axis, Enable_Positive := NOT retractedLS, Enable_Negative:= NOT extendedLS);
 
-PRG_GasNozzleXYZ();]]></ST>
+PRG_GasNozzleXYZ();
+PRG_MainChamber();
+]]></ST>
     </Implementation>
+    <LineIds Name="PRG_PLC_tasks">
+      <LineId Id="3" Count="10" />
+      <LineId Id="2" Count="0" />
+      <LineId Id="24" Count="1" />
+    </LineIds>
   </POU>
 </TcPlcObject>
