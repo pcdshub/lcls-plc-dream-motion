@@ -19,7 +19,7 @@
 		<AxisFolder Name="Main Chamber"/>
 		<AxisFolder Name="Gas Jet Nozzel XYZ"/>
 		<AxisFolder Name="Coil Motion"/>
-		<Axis File="M1_MC-Y.xti" Id="1"/>
+		<Axis File="M1 -MMS-Y.xti" Id="1"/>
 		<Axis File="M6_GSJN-MMS-X.xti" Id="6"/>
 		<Axis File="M8_GSJN-MMS-Z.xti" Id="8"/>
 		<Axis File="M2.xti" Id="2"/>
