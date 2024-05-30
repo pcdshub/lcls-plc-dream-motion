@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.12">
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4022.18">
   <GVL Name="Main" Id="{18d82037-8457-400f-b1ad-ea349db133b4}">
     <Declaration><![CDATA[{attribute 'qualified_only'}
 VAR_GLOBAL
@@ -9,7 +9,7 @@ VAR_GLOBAL
                               .nRawEncoderULINT     := TIIB[DRL_05_EL5042_E2]^FB Inputs Channel 1^Position'}
     M1: DUT_MotionStage := (sName := 'DREAM:MC:MMS:Y ');
 
-    {attribute 'pytmc' := 'pv: DREAM:COIL:MMS:ROLL '}
+(*    {attribute 'pytmc' := 'pv: DREAM:COIL:MMS:ROLL '}
     {attribute 'TcLinkTo' := '.bLimitForwardEnable  := TIIB[DRL_05_EL7047_E3]^STM Status^Status^Digital input 1;
                               .bLimitBackwardEnable := TIIB[DRL_05_EL7047_E3]^STM Status^Status^Digital input 2;
                               .nRawEncoderULINT     := TIIB[DRL_05_EL5042_E2]^FB Inputs Channel 2^Position'}
@@ -51,7 +51,9 @@ VAR_GLOBAL
                               .nRawEncoderULINT     := TIIB[DRL_05_EL5042_E11]^FB Inputs Channel 2^Position'}
     M8: DUT_MotionStage := (sName := 'DREAM:GSJN:MMS:Z');
 
+	
+	*)
 
-END_VAR]]></Declaration>
+END_VAR ]]></Declaration>
   </GVL>
 </TcPlcObject>
