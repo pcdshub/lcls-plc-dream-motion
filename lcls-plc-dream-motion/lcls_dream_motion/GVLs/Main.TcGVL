@@ -51,8 +51,8 @@ VAR_GLOBAL
                               .nRawEncoderULINT     := TIIB[DRL_05_EL5042_E11]^FB Inputs Channel 2^Position'}
     M8: DUT_MotionStage := (sName := 'DREAM:GSJN:MMS:Z');
 
-	
-	*)
+
+    *)
 
 END_VAR ]]></Declaration>
   </GVL>
