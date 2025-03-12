@@ -24,8 +24,9 @@ END_VAR
 power(Axis:=axis, Enable_Positive := retractedLS and extendedLS, Enable_Negative:= extendedLS and retractedLS);
 //power(Axis:=axis, Enable_Positive := NOT retractedLS, Enable_Negative:= NOT extendedLS);
 
-//PRG_GasNozzleXYZ();
+PRG_GasNozzleXYZ();
 PRG_MainChamber();
+PRG_GasJetPointing();
 ]]></ST>
     </Implementation>
   </POU>

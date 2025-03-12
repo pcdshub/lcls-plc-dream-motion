@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4022.18">
+  <POU Name="PRG_GasJetPointing" Id="{d330de38-6d7a-48de-b7c3-627f5234a218}" SpecialFunc="None">
+    <Declaration><![CDATA[PROGRAM PRG_GasJetPointing
+VAR
+    fb_GSJP_X : FB_MotionStage;
+    fb_GSJP_Z : FB_MotionStage;
+    bInit : BOOL := TRUE;
+END_VAR
+]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[IF ( bInit) THEN
+    //bInit := FALSE;
+    Main.M4.bHardwareEnable := TRUE;
+    Main.M4.bPowerSelf := TRUE;
+    Main.M4.nBrakeMode := ENUM_StageBrakeMode.NO_BRAKE;
+    Main.M4.nEnableMode := ENUM_StageEnableMode.DURING_MOTION;
+    END_IF
+
+fb_GSJP_X(stMotionStage := Main.M4);
+
+IF ( bInit) THEN
+    bInit := FALSE;
+    Main.M5.bHardwareEnable:= TRUE;
+    Main.M5.bPowerSelf := TRUE;
+    Main.M5.nBrakeMode := ENUM_StageBrakeMode.NO_BRAKE;
+    Main.M5.nEnableMode := ENUM_StageEnableMode.DURING_MOTION;
+    END_IF
+
+fb_GSJP_Z(stMotionStage := Main.M5);]]></ST>
+    </Implementation>
+  </POU>
+</TcPlcObject>

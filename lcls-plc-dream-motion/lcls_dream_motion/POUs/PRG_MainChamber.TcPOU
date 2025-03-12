@@ -4,7 +4,7 @@
     <Declaration><![CDATA[PROGRAM PRG_MainChamber
 VAR
     fb_MC_Y : FB_MotionStage;
-    bInit : BOOL := FALSE;
+    bInit : BOOL := TRUE;
 END_VAR
 ]]></Declaration>
     <Implementation>

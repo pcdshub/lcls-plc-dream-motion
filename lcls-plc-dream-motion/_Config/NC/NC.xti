@@ -25,7 +25,7 @@
 		<Axis File="M7_GSJN-MMS-Y.xti" Id="7"/>
 		<Axis File="M2 - Coil Roll.xti" Id="2"/>
 		<Axis File="M3 - Coil Yaw.xti" Id="3"/>
-		<Axis File="M4.xti" Id="4"/>
-		<Axis File="M5.xti" Id="5"/>
+		<Axis File="M4 - GSJP X.xti" Id="4"/>
+		<Axis File="M5 - GSJP Z.xti" Id="5"/>
 	</NC>
 </TcSmItem>
