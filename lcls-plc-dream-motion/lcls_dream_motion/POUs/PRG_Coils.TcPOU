@@ -3,7 +3,7 @@
   <POU Name="PRG_Coils" Id="{a0de659b-47bb-4085-b547-ccfe8041ce91}" SpecialFunc="None">
     <Declaration><![CDATA[PROGRAM PRG_Coils
 VAR
-	fb_coil_roll : FB_MotionStage;
+    fb_coil_roll : FB_MotionStage;
     fb_coil_yaw : FB_MotionStage;
     bInit : BOOL := TRUE;
 END_VAR
@@ -29,9 +29,5 @@ IF ( bInit) THEN
 
 fb_coil_yaw(stMotionStage := Main.M3);]]></ST>
     </Implementation>
-    <LineIds Name="PRG_Coils">
-      <LineId Id="9" Count="17" />
-      <LineId Id="5" Count="0" />
-    </LineIds>
   </POU>
 </TcPlcObject>
