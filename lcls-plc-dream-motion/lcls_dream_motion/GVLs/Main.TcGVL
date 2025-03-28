@@ -3,35 +3,35 @@
   <GVL Name="Main" Id="{18d82037-8457-400f-b1ad-ea349db133b4}">
     <Declaration><![CDATA[{attribute 'qualified_only'}
 VAR_GLOBAL
-    {attribute 'pytmc' := 'pv: DREAM:MC:MMS:Y '}
+    {attribute 'pytmc' := 'pv: DREAM:MC:MMS:Y'}
     {attribute 'TcLinkTo' := '.bLimitForwardEnable  := TIIB[DRL_05_EL7047_E1]^STM Status^Status^Digital input 1;
                               .bLimitBackwardEnable := TIIB[DRL_05_EL7047_E1]^STM Status^Status^Digital input 2;
                               .nRawEncoderULINT     := TIIB[DRL_05_EL5042_E2]^FB Inputs Channel 1^Position'}
-    M1: ST_MotionStage := (sName := 'DREAM:MC:MMS:Y ');
+    M1: ST_MotionStage := (sName := 'DREAM:MC:MMS:Y');
 
-    {attribute 'pytmc' := 'pv: DREAM:COIL:MMS:ROLL '}
+    {attribute 'pytmc' := 'pv: DREAM:COIL:MMS:ROLL'}
     {attribute 'TcLinkTo' := '.bLimitForwardEnable  := TIIB[DRL_05_EL7047_E3]^STM Status^Status^Digital input 1;
                               .bLimitBackwardEnable := TIIB[DRL_05_EL7047_E3]^STM Status^Status^Digital input 2;
                               .nRawEncoderULINT     := TIIB[DRL_05_EL5042_E2]^FB Inputs Channel 2^Position'}
-    M2: ST_MotionStage := (sName := 'DREAM:COIL:MMS:ROLL ');
+    M2: ST_MotionStage := (sName := 'DREAM:COIL:MMS:ROLL');
 
-    {attribute 'pytmc' := 'pv: DREAM:COIL:MMS:YAW '}
+    {attribute 'pytmc' := 'pv: DREAM:COIL:MMS:YAW'}
     {attribute 'TcLinkTo' := '.bLimitForwardEnable  := TIIB[DRL_05_EL7047_E4]^STM Status^Status^Digital input 1;
                               .bLimitBackwardEnable := TIIB[DRL_05_EL7047_E4]^STM Status^Status^Digital input 2;
                               .nRawEncoderULINT     := TIIB[DRL_05_EL5042_E5]^FB Inputs Channel 1^Position'}
-    M3: ST_MotionStage := (sName := 'DREAM:COIL:MMS:YAW ');
+    M3: ST_MotionStage := (sName := 'DREAM:COIL:MMS:YAW');
 
-    {attribute 'pytmc' := 'pv: DREAM:GSJP:MMS:X '}
+    {attribute 'pytmc' := 'pv: DREAM:GSJP:MMS:X'}
     {attribute 'TcLinkTo' := '.bLimitForwardEnable  := TIIB[DRL_05_EL7047_E6]^STM Status^Status^Digital input 1;
                               .bLimitBackwardEnable := TIIB[DRL_05_EL7047_E6]^STM Status^Status^Digital input 2;
                               .nRawEncoderULINT     := TIIB[DRL_05_EL5042_E5]^FB Inputs Channel 2^Position'}
-    M4: ST_MotionStage := (sName := 'DREAM:GSJP:MMS:X ');
+    M4: ST_MotionStage := (sName := 'DREAM:GSJP:MMS:X');
 
-    {attribute 'pytmc' := 'pv: DREAM:GSJP:MMS:Z '}
+    {attribute 'pytmc' := 'pv: DREAM:GSJP:MMS:Z'}
     {attribute 'TcLinkTo' := '.bLimitForwardEnable  := TIIB[DRL_05_EL7047_E7]^STM Status^Status^Digital input 2;
                               .bLimitBackwardEnable := TIIB[DRL_05_EL7047_E7]^STM Status^Status^Digital input 1;
                               .nRawEncoderULINT     := TIIB[DRL_05_EL5042_E8]^FB Inputs Channel 1^Position'}
-    M5: ST_MotionStage := (sName := 'DREAM:GSJP:MMS:Z ');
+    M5: ST_MotionStage := (sName := 'DREAM:GSJP:MMS:Z');
 
     {attribute 'pytmc' := 'pv: DREAM:GSJN:MMS:X'}
     {attribute 'TcLinkTo' := '.bLimitForwardEnable  := TIIB[DRL_05_EL7047_E9]^STM Status^Status^Digital input 2;
