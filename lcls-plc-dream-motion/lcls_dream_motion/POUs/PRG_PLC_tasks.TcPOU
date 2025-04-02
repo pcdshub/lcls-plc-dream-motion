@@ -27,7 +27,11 @@ power(Axis:=axis, Enable_Positive := retractedLS and extendedLS, Enable_Negative
 PRG_GasNozzleXYZ();
 PRG_MainChamber();
 PRG_GasJetPointing();
-]]></ST>
+PRG_CoilMovers();]]></ST>
     </Implementation>
+    <LineIds Name="PRG_PLC_tasks">
+      <LineId Id="3" Count="13" />
+      <LineId Id="2" Count="0" />
+    </LineIds>
   </POU>
 </TcPlcObject>
