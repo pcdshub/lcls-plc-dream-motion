@@ -1,0 +1,2 @@
+epicsEnvSet("IOC_TOP", "/c/Users/jyin/Desktop/GitRepo/Jing Repo/lcls-plc-dream-motion/iocBoot/ioc-lcls-dream-motion")
+epicsEnvSet("IOC_DATA", "/cds/data/iocData")
