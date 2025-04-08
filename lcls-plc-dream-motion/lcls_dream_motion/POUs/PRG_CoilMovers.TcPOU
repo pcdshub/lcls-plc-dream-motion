@@ -3,7 +3,7 @@
   <POU Name="PRG_CoilMovers" Id="{26ed603e-5653-4d09-aa76-5bcf08082138}" SpecialFunc="None">
     <Declaration><![CDATA[PROGRAM PRG_CoilMovers
 VAR
-	fb_Coil_Yaw : FB_MotionStage;
+    fb_Coil_Yaw : FB_MotionStage;
     fb_Coil_Roll : FB_MotionStage;
     bInit : BOOL := TRUE;
 END_VAR
@@ -17,9 +17,9 @@ IF ( bInit) THEN
     Main.M2.nBrakeMode := ENUM_StageBrakeMode.NO_BRAKE;
     Main.M2.nEnableMode := ENUM_StageEnableMode.DURING_MOTION;
     END_IF
-	
+
 Main.M2.bLimitForwardEnable := NOT Main.M2.bLimitForwardEnable;
-Main.M2.bLimitBackwardEnable := NOT Main.M2.bLimitBackwardEnable;	
+Main.M2.bLimitBackwardEnable := NOT Main.M2.bLimitBackwardEnable;
 
 fb_Coil_Roll(stMotionStage := Main.M2);
 
@@ -36,16 +36,5 @@ Main.M3.bLimitBackwardEnable := NOT Main.M3.bLimitBackwardEnable;
 
 fb_Coil_Yaw(stMotionStage := Main.M3);]]></ST>
     </Implementation>
-    <LineIds Name="PRG_CoilMovers">
-      <LineId Id="56" Count="0" />
-      <LineId Id="9" Count="6" />
-      <LineId Id="49" Count="0" />
-      <LineId Id="48" Count="0" />
-      <LineId Id="33" Count="0" />
-      <LineId Id="16" Count="10" />
-      <LineId Id="40" Count="1" />
-      <LineId Id="37" Count="0" />
-      <LineId Id="5" Count="0" />
-    </LineIds>
   </POU>
 </TcPlcObject>
