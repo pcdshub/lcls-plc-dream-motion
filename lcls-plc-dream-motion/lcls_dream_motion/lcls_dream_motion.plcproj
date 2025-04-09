@@ -21,7 +21,7 @@
     <Compile Include="PlcTask.TcTTO">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="POUs\PRG_Coils.TcPOU">
+    <Compile Include="POUs\PRG_CoilMovers.TcPOU">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="POUs\PRG_GasJetPointing.TcPOU">
