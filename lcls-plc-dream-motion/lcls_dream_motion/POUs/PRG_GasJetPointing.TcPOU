@@ -15,7 +15,7 @@ END_VAR
     Main.M4.bPowerSelf := TRUE;
     Main.M4.nBrakeMode := ENUM_StageBrakeMode.NO_BRAKE;
     Main.M4.nEnableMode := ENUM_StageEnableMode.DURING_MOTION;
-    
+
     Main.M5.bHardwareEnable:= TRUE;
     Main.M5.bPowerSelf := TRUE;
     Main.M5.nBrakeMode := ENUM_StageBrakeMode.NO_BRAKE;

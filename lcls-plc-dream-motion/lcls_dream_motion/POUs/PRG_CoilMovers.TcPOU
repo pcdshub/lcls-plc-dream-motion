@@ -16,12 +16,12 @@ IF ( bInit) THEN
     Main.M2.bPowerSelf := TRUE;
     Main.M2.nBrakeMode := ENUM_StageBrakeMode.NO_BRAKE;
     Main.M2.nEnableMode := ENUM_StageEnableMode.DURING_MOTION;
-    
+
     Main.M3.bHardwareEnable:= TRUE;
     Main.M3.bPowerSelf := TRUE;
     Main.M3.nBrakeMode := ENUM_StageBrakeMode.NO_BRAKE;
     Main.M3.nEnableMode := ENUM_StageEnableMode.DURING_MOTION;
-    
+
 END_IF
 
 Main.M2.bLimitForwardEnable := NOT Main.M2.bLimitForwardEnable;
