@@ -40,7 +40,7 @@
 		<Box File="DRL_05_EL7047_E12.xti" Id="23">
 			<EtherCAT PortABoxInfo="#x01000016"/>
 		</Box>
-		<Box File="Term 38 (EL9011).xti" Id="38">
+		<Box File="DRL_05_EL9011.xti" Id="38">
 			<EtherCAT PortABoxInfo="#x01000017"/>
 		</Box>
 	</Box>
