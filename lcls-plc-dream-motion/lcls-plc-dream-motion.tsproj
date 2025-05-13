@@ -23,8 +23,8 @@
 			<Device File="Device 1 (EtherCAT).xti" Id="1"/>
 		</Io>
 		<SymbolWatch>
-			<Variable>TIID^Device 1 (EtherCAT)^B940_009_R19_DRL_02_E0_EK1200^R19_DRL_02_E4_EK1122^K4S08_DRL_05_E0_EK1100^DRL_05_EL5042_E2^FB Inputs Channel 2^Position</Variable>
-			<Variable>TINC^NC-Task 1^Axes^M6_GSJN-MMS-X^Enc^Inputs^In^nDataIn1</Variable>
+			<Variable>TIID^Device 1 (EtherCAT)^B940_009_R19_DRL_02_E0_EK1200^R19_DRL_02_E4_EK1122^K4S08_DRL_05_E0_EK1100^DRL_05_EL5042_E11^FB Inputs Channel 1^Position</Variable>
+			<Variable>TIID^Device 1 (EtherCAT)^B940_009_R19_DRL_02_E0_EK1200^R19_DRL_02_E4_EK1122^K4S08_DRL_05_E0_EK1100^DRL_05_EL7047_E10^STM Velocity^Velocity</Variable>
 		</SymbolWatch>
 	</Project>
 	<Mappings>

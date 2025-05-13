@@ -983,7 +983,7 @@ External Setpoint Generation:
 		</DataType>
 	</DataTypes>
 	<Project GUID="{13CD028B-ED78-4875-B8F0-88B1F315EED5}" Name="lcls_dream_motion" PrjFilePath="..\..\lcls_dream_motion\lcls_dream_motion.plcproj" TmcFilePath="..\..\lcls_dream_motion\lcls_dream_motion.tmc" ReloadTmc="true" AmsPort="851" FileArchiveSettings="#x000e" SymbolicMapping="true">
-		<Instance Id="#x08502000" TcSmClass="TComPlcObjDef" KeepUnrestoredLinks="2" TmcPath="lcls_dream_motion\lcls_dream_motion.tmc" TmcHash="{4F9E669A-45B0-B630-0D83-456B89A4421B}">
+		<Instance Id="#x08502000" TcSmClass="TComPlcObjDef" KeepUnrestoredLinks="2" TmcPath="lcls_dream_motion\lcls_dream_motion.tmc" TmcHash="{D22068D1-7D67-89D2-00EA-70B227B1D4B4}">
 			<Name>lcls_dream_motion Instance</Name>
 			<CLSID ClassFactory="TcPlc30">{08500001-0000-0000-F000-000000000064}</CLSID>
 			<Vars VarGrpType="1">
@@ -1557,7 +1557,6 @@ External Setpoint Generation:
 				<Link VarA="PlcTask Inputs^Main.M3.nRawEncoderULINT" VarB="AI Standard Channel 2^Value" AutoLink="true" Size="16"/>
 			</OwnerB>
 			<OwnerB Name="TIID^Device 1 (EtherCAT)^B940_009_R19_DRL_02_E0_EK1200^R19_DRL_02_E4_EK1122^K4S08_DRL_05_E0_EK1100^DRL_05_EL5042_E11">
-				<Link VarA="PlcTask Inputs^Main.M7.nRawEncoderULINT" VarB="FB Inputs Channel 1^Position" AutoLink="true"/>
 				<Link VarA="PlcTask Inputs^Main.M8.nRawEncoderULINT" VarB="FB Inputs Channel 2^Position" AutoLink="true"/>
 			</OwnerB>
 			<OwnerB Name="TIID^Device 1 (EtherCAT)^B940_009_R19_DRL_02_E0_EK1200^R19_DRL_02_E4_EK1122^K4S08_DRL_05_E0_EK1100^DRL_05_EL5042_E2">
@@ -1567,10 +1566,6 @@ External Setpoint Generation:
 			<OwnerB Name="TIID^Device 1 (EtherCAT)^B940_009_R19_DRL_02_E0_EK1200^R19_DRL_02_E4_EK1122^K4S08_DRL_05_E0_EK1100^DRL_05_EL7047_E1">
 				<Link VarA="PlcTask Inputs^Main.M1.bLimitBackwardEnable" VarB="STM Status^Status^Digital input 2" AutoLink="true" Size="1"/>
 				<Link VarA="PlcTask Inputs^Main.M1.bLimitForwardEnable" VarB="STM Status^Status^Digital input 1" AutoLink="true" Size="1"/>
-			</OwnerB>
-			<OwnerB Name="TIID^Device 1 (EtherCAT)^B940_009_R19_DRL_02_E0_EK1200^R19_DRL_02_E4_EK1122^K4S08_DRL_05_E0_EK1100^DRL_05_EL7047_E10">
-				<Link VarA="PlcTask Inputs^Main.M7.bLimitBackwardEnable" VarB="STM Status^Status^Digital input 1" AutoLink="true" Size="1"/>
-				<Link VarA="PlcTask Inputs^Main.M7.bLimitForwardEnable" VarB="STM Status^Status^Digital input 2" AutoLink="true" Size="1"/>
 			</OwnerB>
 			<OwnerB Name="TIID^Device 1 (EtherCAT)^B940_009_R19_DRL_02_E0_EK1200^R19_DRL_02_E4_EK1122^K4S08_DRL_05_E0_EK1100^DRL_05_EL7047_E12">
 				<Link VarA="PlcTask Inputs^Main.M8.bLimitBackwardEnable" VarB="STM Status^Status^Digital input 2" AutoLink="true" Size="1"/>
