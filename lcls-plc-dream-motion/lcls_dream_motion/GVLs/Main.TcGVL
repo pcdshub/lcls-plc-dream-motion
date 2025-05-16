@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.6">
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.12">
   <GVL Name="Main" Id="{18d82037-8457-400f-b1ad-ea349db133b4}">
     <Declaration><![CDATA[{attribute 'qualified_only'}
 VAR_GLOBAL
@@ -36,7 +36,7 @@ VAR_GLOBAL
     {attribute 'pytmc' := 'pv: DREAM:GSJN:MMS:X'}
     {attribute 'TcLinkTo' := '.bLimitForwardEnable  := TIIB[DRL_05_EL7047_E9]^STM Status^Status^Digital input 2;
                               .bLimitBackwardEnable := TIIB[DRL_05_EL7047_E9]^STM Status^Status^Digital input 1;
-                              .nRawEncoderULINT     := TIIB[DRL_05_EL5042_E8]^FB Inputs Channel 2^Position'}
+                              .nRawEncoderULINT     := TIIB[DRL_05_EL5042_E2]^FB Inputs Channel 2^Position'}
     M6: ST_MotionStage := (sName := 'DREAM:GSJN:MMS:X');
 
     {attribute 'pytmc' := 'pv: DREAM:GSJN:MMS:Y'}
@@ -46,8 +46,8 @@ VAR_GLOBAL
     M7: ST_MotionStage := (sName := 'DREAM:GSJN:MMS:Y');
 
     {attribute 'pytmc' := 'pv: DREAM:GSJN:MMS:Z'}
-    {attribute 'TcLinkTo' := '.bLimitForwardEnable  := TIIB[DRL_05_EL7047_E12]^STM Status^Status^Digital input 1;
-                              .bLimitBackwardEnable := TIIB[DRL_05_EL7047_E12]^STM Status^Status^Digital input 2;
+    {attribute 'TcLinkTo' := '.bLimitForwardEnable  := TIIB[DRL_05_EL7047_E12]^STM Status^Status^Digital input 2;
+                              .bLimitBackwardEnable := TIIB[DRL_05_EL7047_E12]^STM Status^Status^Digital input 1;
                               .nRawEncoderULINT     := TIIB[DRL_05_EL5042_E11]^FB Inputs Channel 2^Position'}
     M8: ST_MotionStage := (sName := 'DREAM:GSJN:MMS:Z');
 END_VAR ]]></Declaration>
