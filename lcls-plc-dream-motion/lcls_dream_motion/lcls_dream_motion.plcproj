@@ -12,6 +12,10 @@
     <Implicit_KindOfTask>{1f6e3d79-04f7-4f45-b43e-05ef952fb948}</Implicit_KindOfTask>
     <Implicit_Jitter_Distribution>{9802ec90-e4bb-4e80-88ff-b8fadd401e17}</Implicit_Jitter_Distribution>
     <LibraryReferences>{01fafff0-a775-466e-b6f2-9ca19d63c3ca}</LibraryReferences>
+    <Company>SLAC</Company>
+    <Released>false</Released>
+    <Title>lcls-dream-motion</Title>
+    <ProjectVersion>1.0.0</ProjectVersion>
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="GVLs\Main.TcGVL">
