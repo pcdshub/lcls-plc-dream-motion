@@ -983,7 +983,7 @@ External Setpoint Generation:
 		</DataType>
 	</DataTypes>
 	<Project GUID="{13CD028B-ED78-4875-B8F0-88B1F315EED5}" Name="lcls_dream_motion" PrjFilePath="..\..\lcls_dream_motion\lcls_dream_motion.plcproj" TmcFilePath="..\..\lcls_dream_motion\lcls_dream_motion.tmc" ReloadTmc="true" AmsPort="851" FileArchiveSettings="#x000e" SymbolicMapping="true">
-		<Instance Id="#x08502000" TcSmClass="TComPlcObjDef" KeepUnrestoredLinks="2" TmcPath="lcls_dream_motion\lcls_dream_motion.tmc" TmcHash="{445322B0-730A-26F1-0612-3DC3B1E16AFD}">
+		<Instance Id="#x08502000" TcSmClass="TComPlcObjDef" KeepUnrestoredLinks="2" TmcPath="lcls_dream_motion\lcls_dream_motion.tmc" TmcHash="{9A39886E-4590-76E3-875E-D18953DFD9ED}">
 			<Name>lcls_dream_motion Instance</Name>
 			<CLSID ClassFactory="TcPlc30">{08500001-0000-0000-F000-000000000064}</CLSID>
 			<Vars VarGrpType="1">

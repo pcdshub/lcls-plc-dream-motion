@@ -1326,7 +1326,7 @@ External Setpoint Generation:
 		<Encoder Name="Enc" EncType="29">
 			<EncPara ScaleFactorNumerator="0.000244140625" Offset="-33543954.59" MaxCount="#xffffffff" MaxCountHighDWord="#x0000001f">
 				<SoftEndMinControl Enable="true" Range="-3.5"/>
-				<SoftEndMaxControl Enable="true" Range="0.5"/>
+				<SoftEndMaxControl Enable="true" Range="4"/>
 				<Inc RefSoftSyncMask="#x0000ffff"/>
 			</EncPara>
 			<Vars VarGrpType="1">
@@ -1436,7 +1436,7 @@ External Setpoint Generation:
 		</Drive>
 		<Controller Name="Ctrl" CtrType="1">
 			<CtrPara PriorControlFactor="1">
-				<PosDiffControl Range="0.1"/>
+				<PosDiffControl Range="0.25"/>
 				<Observer BandWidth="20"/>
 			</CtrPara>
 		</Controller>
