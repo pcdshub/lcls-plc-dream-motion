@@ -5,7 +5,7 @@
     <ProjectGuid>{13cd028b-ed78-4875-b8f0-88b1f315eed5}</ProjectGuid>
     <SubObjectsSortedByName>True</SubObjectsSortedByName>
     <Name>lcls_dream_motion</Name>
-    <ProgramVersion>3.1.4022.7</ProgramVersion>
+    <ProgramVersion>3.1.4026.17</ProgramVersion>
     <Application>{63d87c73-cd1b-49a5-aa30-e58396316593}</Application>
     <TypeSystem>{d4792aec-86b5-4483-8d0b-461c6158b494}</TypeSystem>
     <Implicit_Task_Info>{655f49f7-8ccc-4269-9468-a0f95feead53}</Implicit_Task_Info>
@@ -131,14 +131,11 @@
     <PlaceholderResolution Include="Tc2_Utilities">
       <Resolution>Tc2_Utilities, 3.9.2.0 (Beckhoff Automation GmbH)</Resolution>
     </PlaceholderResolution>
-    <PlaceholderResolution Include="Tc3_DynamicMemory">
-      <Resolution>Tc3_DynamicMemory, 1.1.4.0 (Beckhoff Automation GmbH)</Resolution>
-    </PlaceholderResolution>
     <PlaceholderResolution Include="Tc3_EventLogger">
       <Resolution>Tc3_EventLogger, 3.3.13.0 (Beckhoff Automation GmbH)</Resolution>
     </PlaceholderResolution>
     <PlaceholderResolution Include="Tc3_IPCDiag">
-      <Resolution>Tc3_IPCDiag, 1.2.1.0 (Beckhoff Automation GmbH)</Resolution>
+      <Resolution>Tc3_IPCDiag, 1.2.2.0 (Beckhoff Automation GmbH)</Resolution>
     </PlaceholderResolution>
     <PlaceholderResolution Include="Tc3_JsonXml">
       <Resolution>Tc3_JsonXml, 3.4.7.0 (Beckhoff Automation GmbH)</Resolution>
