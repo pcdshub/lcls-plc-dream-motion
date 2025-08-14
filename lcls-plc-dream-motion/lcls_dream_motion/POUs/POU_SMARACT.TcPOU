@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1">
+  <POU Name="POU_SMARACT" Id="{8c8a4af2-8a7c-4f25-948f-bede85609ff3}" SpecialFunc="None">
+    <Declaration><![CDATA[PROGRAM POU_SMARACT
+VAR
+// 	fb_DGPD_Y : FB_MotionStageMCS2CSP ( stPiezoStage:=Main.M9, eModule:=E_Module.CHAN1 );
+// 	fb_DGPD_X : FB_MotionStageMCS2CSP ( stPiezoStage:=Main.M10, eModule:=E_Module.CHAN2 );
+// 	fb_DGPD_RET : FB_MotionStageMCS2CSP ( stPiezoStage:=Main.M11, eModule:=E_Module.CHAN3 );
+// 
+//     stDGPD_RET: ARRAY[1..GeneralConstants.MAX_STATES] OF ST_PositionState;
+// 	
+//     {attribute 'pytmc' := '
+//           pv: DGPD:RET:STATES:SET
+//           io: io
+//     '}
+//      stDGPD_RET_Set: ENUM_AxisStates;
+//         {attribute 'pytmc' := '
+//           pv: DGPD:RET:STATES:GET
+//           io: i
+// 		'}
+//     stDGPD_RET_Get: ENUM_AxisStates;
+// 	
+// 	fbDGPD_RET_PMPStates: FB_PositionStatePMPS1D;
+END_VAR
+]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[// fbDGPD_RET_PMPStates(
+//     stMotionStage:=Main.M11,
+//     astPositionState:=stDGPD_RET,
+//     eEnumSet:=stDGPD_RET_Set,
+//     eEnumGet:=stDGPD_RET_Get,
+//     sDeviceName := 'DREAM:DGPD:MMT:RET',
+//     sTransitionKey := 'DREAM:DGPD:MMT:RET-TRANSITION',
+//     fbFFHWO:=GVL_PMPS.fbFastFaultOutput1,
+//     fbArbiter:=GVL_PMPS.fbArbiter1,
+//     bEnableMotion:=TRUE,
+//     bEnableBeamParams:=TRUE,
+//     bEnablePositionLimits:=TRUE,
+// 	bReadDBNow:=TRUE,
+// );
+// 
+// fb_DGPD_RET();
+// fb_DGPD_X();
+// fb_DGPD_Y();
+]]></ST>
+    </Implementation>
+    <LineIds Name="POU_SMARACT">
+      <LineId Id="15" Count="12" />
+      <LineId Id="13" Count="0" />
+      <LineId Id="5" Count="4" />
+    </LineIds>
+  </POU>
+</TcPlcObject>

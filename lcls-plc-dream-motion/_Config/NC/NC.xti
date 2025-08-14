@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<TcSmItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.beckhoff.com/schemas/2012/07/TcSmItem" TcSmVersion="1.0" TcVersion="3.1.4022.30" ClassName="CNcSafTaskDef" SubType="0">
+<?xml version="1.0"?>
+<TcSmItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.beckhoff.com/schemas/2012/07/TcSmProject" TcSmVersion="1.0" TcVersion="3.1.4026.17" ClassName="CNcSafTaskDef" SubType="0">
 	<NC>
 		<SafTask Priority="4" CycleTime="20000" AmsPort="501" IoAtBegin="true">
 			<Name>NC-Task 1</Name>
@@ -19,10 +19,14 @@
 		<AxisFolder Name="Main Chamber"/>
 		<AxisFolder Name="Gas Jet Nozzel XYZ"/>
 		<AxisFolder Name="Coil Motion"/>
+		<AxisFolder Name="In-Vacuum_motion"/>
 		<Axis File="M1 -MMS-Y.xti" Id="1"/>
 		<Axis File="M6_GSJN-MMS-X.xti" Id="6"/>
 		<Axis File="M8_GSJN-MMS-Z.xti" Id="8"/>
 		<Axis File="M7_GSJN-MMS-Y.xti" Id="7"/>
+		<Axis File="M9 - DREAM%_3ADGPD%_3AMMT%_3AY.xti" Id="9"/>
+		<Axis File="M10 - DREAM%_3ADGPD%_3AMMT%_3AX.xti" Id="10"/>
+		<Axis File="M11 - DREAM%_3ADGPD%_3AMMT%_3ARET.xti" Id="11"/>
 		<Axis File="M2 - Coil Roll.xti" Id="2"/>
 		<Axis File="M3 - Coil Yaw.xti" Id="3"/>
 		<Axis File="M4 - GSJP X.xti" Id="4"/>
