@@ -1,9 +1,9 @@
-#!c:/Repos/ads-ioc/R0.6.1///bin/rhel7-x86_64/adsIoc
+#!c:/Repos/ads-ioc/R0.8.0///bin/rhel7-x86_64/adsIoc
 ################### AUTO-GENERATED DO NOT EDIT ###################
 #
 #         Project: lcls-plc-dream-motion.tsproj
 #        PLC name: lcls_dream_motion (lcls_dream_motion Instance)
-# Generated using: pytmc 2.15.2.dev0+g73bd2d9.d20230727
+# Generated using: pytmc 2.18.2
 # Project version: unknown
 #    Project hash: unknown
 #     PLC IP/host: 172.21.132.145
@@ -15,11 +15,13 @@
 # Libraries:
 #
 #   LCLS General: * -> 2.12.0 (SLAC)
-#   lcls-twincat-motion: * -> 4.2.1 (SLAC)
-#   Tc2_MC2: * -> 3.3.42.0 (Beckhoff Automation GmbH)
-#   Tc2_Standard: * -> 3.3.2.0 (Beckhoff Automation GmbH)
-#   Tc2_System: * -> 3.4.22.0 (Beckhoff Automation GmbH)
-#   Tc3_Module: * -> 3.3.21.0 (Beckhoff Automation GmbH)
+#   lcls-twincat-motion: * -> 1.0.0 (SLAC)
+#   PMPS: * -> 3.4.1 (SLAC - LCLS)
+#   Tc2_MC2: * -> 3.3.69.0 (Beckhoff Automation GmbH)
+#   Tc2_Standard: * -> 3.4.5.0 (Beckhoff Automation GmbH)
+#   Tc2_System: * -> 3.9.1.0 (Beckhoff Automation GmbH)
+#   Tc3_IPCDiag: * -> 1.2.2.0 (Beckhoff Automation GmbH)
+#   Tc3_Module: * -> 3.4.5.0 (Beckhoff Automation GmbH)
 #
 ################### AUTO-GENERATED DO NOT EDIT ###################
 < envPaths
@@ -39,7 +41,7 @@ epicsEnvSet("ASYN_PORT",        "ASYN_PLC")
 epicsEnvSet("IPADDR",           "172.21.132.145")
 epicsEnvSet("AMSID",            "172.21.132.145.1.1")
 epicsEnvSet("AMS_PORT",         "851")
-epicsEnvSet("ADS_MAX_PARAMS",   "1407")
+epicsEnvSet("ADS_MAX_PARAMS",   "3273")
 epicsEnvSet("ADS_SAMPLE_MS",    "50")
 epicsEnvSet("ADS_MAX_DELAY_MS", "100")
 epicsEnvSet("ADS_TIMEOUT_MS",   "1000")
@@ -78,7 +80,7 @@ cd "$(ADS_IOC_TOP)/db"
 
 epicsEnvSet("MOTOR_PORT",     "PLC_ADS")
 epicsEnvSet("PREFIX",         "PLC:lcls_dream_motion:")
-epicsEnvSet("NUMAXES",        "8")
+epicsEnvSet("NUMAXES",        "11")
 epicsEnvSet("MOVE_POLL_RATE", "200")
 epicsEnvSet("IDLE_POLL_RATE", "1000")
 
@@ -229,37 +231,86 @@ dbLoadRecords("EthercatMC.template", "PREFIX=$(MOTOR_PREFIX), MOTOR_NAME=$(MOTOR
 dbLoadRecords("EthercatMCreadback.template", "PREFIX=$(MOTOR_PREFIX), MOTOR_NAME=$(MOTOR_NAME), R=$(MOTOR_NAME)-, MOTOR_PORT=$(MOTOR_PORT), ASYN_PORT=$(ASYN_PORT), AXIS_NO=$(AXIS_NO), DESC=$(DESC), PREC=$(PREC) ")
 dbLoadRecords("EthercatMCdebug.template", "PREFIX=$(MOTOR_PREFIX), MOTOR_NAME=$(MOTOR_NAME), MOTOR_PORT=$(MOTOR_PORT), AXIS_NO=$(AXIS_NO), PREC=3")
 
+epicsEnvSet("AXIS_NO",         "9")
+epicsEnvSet("MOTOR_PREFIX",    "DREAM:DGPD:MMT:")
+epicsEnvSet("MOTOR_NAME",      "Y")
+epicsEnvSet("DESC",            "Main.M9 / M9_DREAM_DGPD_MMT_Y")
+epicsEnvSet("EGU",             "mm")
+epicsEnvSet("PREC",            "3")
+epicsEnvSet("AXISCONFIG",      "")
+epicsEnvSet("ECAXISFIELDINIT", "")
+epicsEnvSet("AMPLIFIER_FLAGS", "")
+
+EthercatMCCreateAxis("$(MOTOR_PORT)", "$(AXIS_NO)", "$(AMPLIFIER_FLAGS)", "$(AXISCONFIG)")
+dbLoadRecords("EthercatMC.template", "PREFIX=$(MOTOR_PREFIX), MOTOR_NAME=$(MOTOR_NAME), R=$(MOTOR_NAME)-, MOTOR_PORT=$(MOTOR_PORT), ASYN_PORT=$(ASYN_PORT), AXIS_NO=$(AXIS_NO), DESC=$(DESC), PREC=$(PREC), EGU=$(EGU) $(ECAXISFIELDINIT)")
+dbLoadRecords("EthercatMCreadback.template", "PREFIX=$(MOTOR_PREFIX), MOTOR_NAME=$(MOTOR_NAME), R=$(MOTOR_NAME)-, MOTOR_PORT=$(MOTOR_PORT), ASYN_PORT=$(ASYN_PORT), AXIS_NO=$(AXIS_NO), DESC=$(DESC), PREC=$(PREC) ")
+dbLoadRecords("EthercatMCdebug.template", "PREFIX=$(MOTOR_PREFIX), MOTOR_NAME=$(MOTOR_NAME), MOTOR_PORT=$(MOTOR_PORT), AXIS_NO=$(AXIS_NO), PREC=3")
+
+epicsEnvSet("AXIS_NO",         "10")
+epicsEnvSet("MOTOR_PREFIX",    "DREAM:DGPD:MMT:")
+epicsEnvSet("MOTOR_NAME",      "X")
+epicsEnvSet("DESC",            "Main.M10 / M10_DREAM_DGPD_MMT_X")
+epicsEnvSet("EGU",             "mm")
+epicsEnvSet("PREC",            "3")
+epicsEnvSet("AXISCONFIG",      "")
+epicsEnvSet("ECAXISFIELDINIT", "")
+epicsEnvSet("AMPLIFIER_FLAGS", "")
+
+EthercatMCCreateAxis("$(MOTOR_PORT)", "$(AXIS_NO)", "$(AMPLIFIER_FLAGS)", "$(AXISCONFIG)")
+dbLoadRecords("EthercatMC.template", "PREFIX=$(MOTOR_PREFIX), MOTOR_NAME=$(MOTOR_NAME), R=$(MOTOR_NAME)-, MOTOR_PORT=$(MOTOR_PORT), ASYN_PORT=$(ASYN_PORT), AXIS_NO=$(AXIS_NO), DESC=$(DESC), PREC=$(PREC), EGU=$(EGU) $(ECAXISFIELDINIT)")
+dbLoadRecords("EthercatMCreadback.template", "PREFIX=$(MOTOR_PREFIX), MOTOR_NAME=$(MOTOR_NAME), R=$(MOTOR_NAME)-, MOTOR_PORT=$(MOTOR_PORT), ASYN_PORT=$(ASYN_PORT), AXIS_NO=$(AXIS_NO), DESC=$(DESC), PREC=$(PREC) ")
+dbLoadRecords("EthercatMCdebug.template", "PREFIX=$(MOTOR_PREFIX), MOTOR_NAME=$(MOTOR_NAME), MOTOR_PORT=$(MOTOR_PORT), AXIS_NO=$(AXIS_NO), PREC=3")
+
+epicsEnvSet("AXIS_NO",         "11")
+epicsEnvSet("MOTOR_PREFIX",    "DREAM:DGPD:MMT:")
+epicsEnvSet("MOTOR_NAME",      "RET")
+epicsEnvSet("DESC",            "Main.M11 / M11_DREAM_DGPD_MMT_RET")
+epicsEnvSet("EGU",             "mm")
+epicsEnvSet("PREC",            "3")
+epicsEnvSet("AXISCONFIG",      "")
+epicsEnvSet("ECAXISFIELDINIT", "")
+epicsEnvSet("AMPLIFIER_FLAGS", "")
+
+EthercatMCCreateAxis("$(MOTOR_PORT)", "$(AXIS_NO)", "$(AMPLIFIER_FLAGS)", "$(AXISCONFIG)")
+dbLoadRecords("EthercatMC.template", "PREFIX=$(MOTOR_PREFIX), MOTOR_NAME=$(MOTOR_NAME), R=$(MOTOR_NAME)-, MOTOR_PORT=$(MOTOR_PORT), ASYN_PORT=$(ASYN_PORT), AXIS_NO=$(AXIS_NO), DESC=$(DESC), PREC=$(PREC), EGU=$(EGU) $(ECAXISFIELDINIT)")
+dbLoadRecords("EthercatMCreadback.template", "PREFIX=$(MOTOR_PREFIX), MOTOR_NAME=$(MOTOR_NAME), R=$(MOTOR_NAME)-, MOTOR_PORT=$(MOTOR_PORT), ASYN_PORT=$(ASYN_PORT), AXIS_NO=$(AXIS_NO), DESC=$(DESC), PREC=$(PREC) ")
+dbLoadRecords("EthercatMCdebug.template", "PREFIX=$(MOTOR_PREFIX), MOTOR_NAME=$(MOTOR_NAME), MOTOR_PORT=$(MOTOR_PORT), AXIS_NO=$(AXIS_NO), PREC=3")
+
 
 dbLoadRecords("iocSoft.db", "IOC=PLC:lcls_dream_motion")
 dbLoadRecords("save_restoreStatus.db", "P=PLC:lcls_dream_motion:")
 dbLoadRecords("caPutLog.db", "IOC=$(IOC)")
 
 ## TwinCAT task, application, and project information databases ##
-dbLoadRecords("TwinCAT_TaskInfo.db", "PORT=$(ASYN_PORT),PREFIX=PLC:lcls_dream_motion,IDX=1")
+dbLoadRecords("TwinCAT_TaskInfo.db", "PORT=$(ASYN_PORT),PREFIX=PLC:lcls_dream_motion,IDX=1,TASK_PORT=350")
 dbLoadRecords("TwinCAT_AppInfo.db", "PORT=$(ASYN_PORT), PREFIX=PLC:lcls_dream_motion")
 
-dbLoadRecords("TwinCAT_Project.db", "PREFIX=PLC:lcls_dream_motion,PROJECT=lcls-plc-dream-motion.tsproj,HASH=unknown,VERSION=unknown,PYTMC=2.15.2.dev0+g73bd2d9.d20230727,PLC_HOST=172.21.132.145")
+dbLoadRecords("TwinCAT_Project.db", "PREFIX=PLC:lcls_dream_motion,PROJECT=lcls-plc-dream-motion.tsproj,HASH=unknown,VERSION=unknown,PYTMC=2.18.2,PLC_HOST=172.21.132.145")
 
 #   LCLS General: * -> 2.12.0 (SLAC)
 dbLoadRecords("TwinCAT_Dependency.db", "PREFIX=PLC:lcls_dream_motion,DEPENDENCY=LCLS_General,VERSION=2.12.0,VENDOR=SLAC")
-#   lcls-twincat-motion: * -> 4.2.1 (SLAC)
-dbLoadRecords("TwinCAT_Dependency.db", "PREFIX=PLC:lcls_dream_motion,DEPENDENCY=lcls-twincat-motion,VERSION=4.2.1,VENDOR=SLAC")
-#   Tc2_MC2: * -> 3.3.42.0 (Beckhoff Automation GmbH)
-dbLoadRecords("TwinCAT_Dependency.db", "PREFIX=PLC:lcls_dream_motion,DEPENDENCY=Tc2_MC2,VERSION=3.3.42.0,VENDOR=Beckhoff Automation GmbH")
-#   Tc2_Standard: * -> 3.3.2.0 (Beckhoff Automation GmbH)
-dbLoadRecords("TwinCAT_Dependency.db", "PREFIX=PLC:lcls_dream_motion,DEPENDENCY=Tc2_Standard,VERSION=3.3.2.0,VENDOR=Beckhoff Automation GmbH")
-#   Tc2_System: * -> 3.4.22.0 (Beckhoff Automation GmbH)
-dbLoadRecords("TwinCAT_Dependency.db", "PREFIX=PLC:lcls_dream_motion,DEPENDENCY=Tc2_System,VERSION=3.4.22.0,VENDOR=Beckhoff Automation GmbH")
-#   Tc3_Module: * -> 3.3.21.0 (Beckhoff Automation GmbH)
-dbLoadRecords("TwinCAT_Dependency.db", "PREFIX=PLC:lcls_dream_motion,DEPENDENCY=Tc3_Module,VERSION=3.3.21.0,VENDOR=Beckhoff Automation GmbH")
+#   lcls-twincat-motion: * -> 1.0.0 (SLAC)
+dbLoadRecords("TwinCAT_Dependency.db", "PREFIX=PLC:lcls_dream_motion,DEPENDENCY=lcls-twincat-motion,VERSION=1.0.0,VENDOR=SLAC")
+#   PMPS: * -> 3.4.1 (SLAC - LCLS)
+dbLoadRecords("TwinCAT_Dependency.db", "PREFIX=PLC:lcls_dream_motion,DEPENDENCY=PMPS,VERSION=3.4.1,VENDOR=SLAC - LCLS")
+#   Tc2_MC2: * -> 3.3.69.0 (Beckhoff Automation GmbH)
+dbLoadRecords("TwinCAT_Dependency.db", "PREFIX=PLC:lcls_dream_motion,DEPENDENCY=Tc2_MC2,VERSION=3.3.69.0,VENDOR=Beckhoff Automation GmbH")
+#   Tc2_Standard: * -> 3.4.5.0 (Beckhoff Automation GmbH)
+dbLoadRecords("TwinCAT_Dependency.db", "PREFIX=PLC:lcls_dream_motion,DEPENDENCY=Tc2_Standard,VERSION=3.4.5.0,VENDOR=Beckhoff Automation GmbH")
+#   Tc2_System: * -> 3.9.1.0 (Beckhoff Automation GmbH)
+dbLoadRecords("TwinCAT_Dependency.db", "PREFIX=PLC:lcls_dream_motion,DEPENDENCY=Tc2_System,VERSION=3.9.1.0,VENDOR=Beckhoff Automation GmbH")
+#   Tc3_IPCDiag: * -> 1.2.2.0 (Beckhoff Automation GmbH)
+dbLoadRecords("TwinCAT_Dependency.db", "PREFIX=PLC:lcls_dream_motion,DEPENDENCY=Tc3_IPCDiag,VERSION=1.2.2.0,VENDOR=Beckhoff Automation GmbH")
+#   Tc3_Module: * -> 3.4.5.0 (Beckhoff Automation GmbH)
+dbLoadRecords("TwinCAT_Dependency.db", "PREFIX=PLC:lcls_dream_motion,DEPENDENCY=Tc3_Module,VERSION=3.4.5.0,VENDOR=Beckhoff Automation GmbH")
 
 cd "$(IOC_TOP)"
 
 ## PLC Project Database files ##
 dbLoadRecords("lcls_dream_motion.db", "PORT=$(ASYN_PORT),PREFIX=PLC:lcls_dream_motion:,IOCNAME=$(IOC),IOC=$(IOC)")
 
-# Total records: 407
-callbackSetQueueSize(2814)
+# Total records: 2273
+callbackSetQueueSize(6546)
 
 # Autosave and archive settings:
 save_restoreSet_status_prefix("PLC:lcls_dream_motion:")

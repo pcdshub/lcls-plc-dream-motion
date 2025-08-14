@@ -6,7 +6,6 @@ VAR_GLOBAL
 	{attribute 'TcLinkTo' := 'TIID^Device 1 (EtherCAT)^B940_009_R19_DRL_02_E0_EK1200^R19_DRL_02_E4_EK1122^Term 35 (EK1100)^B950-100H1-R02-PNL-01_E2^Channel 1^Input'}
     {attribute 'pytmc' := '
         pv: "DREAM:SL:STATUS",
-        io: "i",
         field: "DREAM Safety Loop Status",
         field: "ZNAM OPEN",
         field: "ONAM CLOSED"
@@ -16,7 +15,6 @@ VAR_GLOBAL
 	{attribute 'TcLinkTo' := 'TIID^Device 1 (EtherCAT)^B940_009_R19_DRL_02_E0_EK1200^R19_DRL_02_E4_EK1122^Term 35 (EK1100)^B950-100H1-R02-PNL-01_E1^Channel 1^Output'}
     {attribute 'pytmc' := '
         pv: "DREAM:SL:ENABLE",
-        io: "io",
         field: "DREAM Safety Loop Enable",
         field: "ZNAM OPEN",
         field: "ONAM CLOSED"
