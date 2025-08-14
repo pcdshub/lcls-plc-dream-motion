@@ -24,13 +24,13 @@ VAR_GLOBAL
     {attribute 'pytmc' := 'pv: DREAM:GSJP:MMS:X '}
     {attribute 'TcLinkTo' := '.bLimitForwardEnable  := TIIB[DRL_05_EL7047_E6]^STM Status^Status^Digital input 1;
                               .bLimitBackwardEnable := TIIB[DRL_05_EL7047_E6]^STM Status^Status^Digital input 2;
-                              .nRawEncoderULINT     := TIIB[DRL_05_EL5042_E5]^FB Inputs Channel 2^Position'}
+                              .nRawEncoderULINT     := TIIB[DRL_05_EL3064_E5]^AI Standard Channel 3^Value'}
     M4: ST_MotionStage := (sName := 'DREAM:GSJP:MMS:X ');
 
     {attribute 'pytmc' := 'pv: DREAM:GSJP:MMS:Z '}
     {attribute 'TcLinkTo' := '.bLimitForwardEnable  := TIIB[DRL_05_EL7047_E7]^STM Status^Status^Digital input 2;
                               .bLimitBackwardEnable := TIIB[DRL_05_EL7047_E7]^STM Status^Status^Digital input 1;
-                              .nRawEncoderULINT     := TIIB[DRL_05_EL5042_E8]^FB Inputs Channel 1^Position'}
+                              .nRawEncoderULINT     := TIIB[DRL_05_EL3064_E5]^AI Standard Channel 4^Value'}
     M5: ST_MotionStage := (sName := 'DREAM:GSJP:MMS:Z ');
 
     {attribute 'pytmc' := 'pv: DREAM:GSJN:MMS:X'}

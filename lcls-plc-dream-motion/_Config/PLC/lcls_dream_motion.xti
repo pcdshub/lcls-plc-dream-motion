@@ -983,7 +983,7 @@ External Setpoint Generation:
 		</DataType>
 	</DataTypes>
 	<Project GUID="{13CD028B-ED78-4875-B8F0-88B1F315EED5}" Name="lcls_dream_motion" PrjFilePath="..\..\lcls_dream_motion\lcls_dream_motion.plcproj" TmcFilePath="..\..\lcls_dream_motion\lcls_dream_motion.tmc" ReloadTmc="true" AmsPort="851" FileArchiveSettings="#x000e" SymbolicMapping="true">
-		<Instance Id="#x08502000" TcSmClass="TComPlcObjDef" KeepUnrestoredLinks="2" TmcHash="{9A56B7D0-248A-BE57-6D7D-A60924ABBC96}" TmcPath="lcls_dream_motion\lcls_dream_motion.tmc">
+		<Instance Id="#x08502000" TcSmClass="TComPlcObjDef" KeepUnrestoredLinks="2" TmcHash="{8E7CE68C-F735-FE4B-3E12-39199191FA9D}" TmcPath="lcls_dream_motion\lcls_dream_motion.tmc">
 			<Name>lcls_dream_motion Instance</Name>
 			<CLSID ClassFactory="TcPlc30">{08500001-0000-0000-F000-000000000064}</CLSID>
 			<Vars VarGrpType="8" AreaNo="4">
@@ -1718,6 +1718,8 @@ External Setpoint Generation:
 			<OwnerB Name="TIID^Device 1 (EtherCAT)^B940_009_R19_DRL_02_E0_EK1200^R19_DRL_02_E4_EK1122^K4S08_DRL_05_E0_EK1100^DRL_05_EL3064_E5">
 				<Link VarA="PlcTask Inputs^Main.M2.nRawEncoderULINT" VarB="AI Standard Channel 1^Value" AutoLink="true" Size="16"/>
 				<Link VarA="PlcTask Inputs^Main.M3.nRawEncoderULINT" VarB="AI Standard Channel 2^Value" AutoLink="true" Size="16"/>
+				<Link VarA="PlcTask Inputs^Main.M4.nRawEncoderULINT" VarB="AI Standard Channel 3^Value" AutoLink="true" Size="16"/>
+				<Link VarA="PlcTask Inputs^Main.M5.nRawEncoderULINT" VarB="AI Standard Channel 4^Value" AutoLink="true" Size="16"/>
 			</OwnerB>
 			<OwnerB Name="TIID^Device 1 (EtherCAT)^B940_009_R19_DRL_02_E0_EK1200^R19_DRL_02_E4_EK1122^K4S08_DRL_05_E0_EK1100^DRL_05_EL5042_E11">
 				<Link VarA="PlcTask Inputs^Main.M7.nRawEncoderULINT" VarB="FB Inputs Channel 1^Position" AutoLink="true"/>
