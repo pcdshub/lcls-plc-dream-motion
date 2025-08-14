@@ -11,7 +11,7 @@ VAR_GLOBAL
         field: "ZNAM OPEN",
         field: "ONAM CLOSED"
     '}
-    bSafetyLoopStatus : BOOL;
+    bSafetyLoopStatus AT %I* : BOOL;
 
 	{attribute 'TcLinkTo' := 'TIID^Device 1 (EtherCAT)^B940_009_R19_DRL_02_E0_EK1200^R19_DRL_02_E4_EK1122^Term 35 (EK1100)^B950-100H1-R02-PNL-01_E1^Channel 1^Output'}
     {attribute 'pytmc' := '
@@ -21,7 +21,7 @@ VAR_GLOBAL
         field: "ZNAM OPEN",
         field: "ONAM CLOSED"
     '}
-    bSafetyLoopEnable : BOOL;
+    bSafetyLoopEnable AT %Q*: BOOL;
 END_VAR]]></Declaration>
   </GVL>
 </TcPlcObject>

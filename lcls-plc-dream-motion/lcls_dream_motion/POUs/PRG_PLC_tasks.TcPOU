@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.6">
+<TcPlcObject Version="1.1.0.1">
   <POU Name="PRG_PLC_tasks" Id="{ed295dcb-e9ae-41f5-8c35-f2cb9f5cb69e}" SpecialFunc="None">
     <Declaration><![CDATA[PROGRAM PRG_PLC_tasks
 VAR
@@ -28,7 +28,13 @@ power(Axis:=axis, Enable_Positive := retractedLS and extendedLS, Enable_Negative
 PRG_GasNozzleXYZ();
 PRG_MainChamber();
 PRG_GasJetPointing();
-PRG_CoilMovers();]]></ST>
+PRG_CoilMovers();
+PRG_SMARACT();]]></ST>
     </Implementation>
+    <LineIds Name="PRG_PLC_tasks">
+      <LineId Id="3" Count="14" />
+      <LineId Id="2" Count="0" />
+      <LineId Id="18" Count="0" />
+    </LineIds>
   </POU>
 </TcPlcObject>

@@ -54,20 +54,7 @@ VAR_GLOBAL
 	// In-Vacuum Motion
     {attribute 'pytmc':='pv: DREAM:DGPD:MMT:Y'}
     {attribute 'TcLinkTo' := '
-        .nRawEncoderDINT		:=TIID^Device 1 (EtherCAT)^B940_009_R19_DRL_02_E0_EK1200^R19_DRL_02_E4_EK1122^TMO-DREAM-SMARACT-03^DREAM:DGPD:MMT:Y^mode/status/pos/fError TxPDO^Position Actual Value;
-    '}
-	{attribute 'TcLinkToOSO' := '
-        .stDS402Drive.nModeOfOperationNC	:=<0,8,0>TINC^NC-Task 1^Axes^M9 - DREAM:DGPD:MMT:Y^Drive^Outputs^Out^nCtrl5;
-        .stDS402Drive.nDS402DriveControlNC := <0,8,0>TINC^NC-Task 1^Axes^M9 - DREAM:DGPD:MMT:Y^Drive^Outputs^Out^nCtrl1;
-        .stDS402Drive.nDS402DriveControlNC := <8,8,0>TINC^NC-Task 1^Axes^M9 - DREAM:DGPD:MMT:Y^Drive^Outputs^Out^nCtrl2
-    '}
-    {attribute 'TcLinkTo' := '
-        .stDS402Drive.nSlaveAddr:=TIID^Device 1 (EtherCAT)^B940_009_R19_DRL_02_E0_EK1200^R19_DRL_02_E4_EK1122^TMO-DREAM-SMARACT-03^InfoData^AdsAddr^port;
-        .stDS402Drive.stDS402DriveStatus:=TIID^Device 1 (EtherCAT)^B940_009_R19_DRL_02_E0_EK1200^R19_DRL_02_E4_EK1122^TMO-DREAM-SMARACT-03^DREAM:DGPD:MMT:Y^mode/status/pos/fError TxPDO^Status Word;
-        .stDS402Drive.nFollowingError:=;TIID^Device 1 (EtherCAT)^B940_009_R19_DRL_02_E0_EK1200^R19_DRL_02_E4_EK1122^TMO-DREAM-SMARACT-03^DREAM:DGPD:MMT:Y^mode/status/pos/fError TxPDO^Following Error Actual Value;
-        .stDS402Drive.nModeOfOperation:=TIID^Device 1 (EtherCAT)^B940_009_R19_DRL_02_E0_EK1200^R19_DRL_02_E4_EK1122^TMO-DREAM-SMARACT-03^DREAM:DGPD:MMT:Y^ctl/mode/pos RxPDO^Modes of Operation;
-        .stDS402Drive.nModeOfOperationDisplay:=TIID^Device 1 (EtherCAT)^B940_009_R19_DRL_02_E0_EK1200^R19_DRL_02_E4_EK1122^TMO-DREAM-SMARACT-03^DREAM:DGPD:MMT:Y^mode/status/pos/fError TxPDO^Modes of Operation Display;
-        .stDS402Drive.nDS402DriveControl:=TIID^Device 1 (EtherCAT)^B940_009_R19_DRL_02_E0_EK1200^R19_DRL_02_E4_EK1122^TMO-DREAM-SMARACT-03^DREAM:DGPD:MMT:Y^ctl/mode/pos RxPDO^Control Word;
+        .nRawEncoderDINT		:=TIID^Device 1 (EtherCAT)^B940_009_R19_DRL_02_E0_EK1200^R19_DRL_02_E4_EK1122^TMO-DREAM-SMARACT-03^DREAM:DGPD:MMT:Y^mode/status/pos/fError TxPDO^Position Actual Value
     '}
     M9 : ST_MotionStage := (sName:='DREAM:DGPD:MMT:Y',
 							nHomingMode:=E_EpicsHomeCmd.NONE,
@@ -76,24 +63,10 @@ VAR_GLOBAL
 							bPowerSelf:=TRUE,
 							bHardwareEnable:=TRUE );
 
-
 	////
 	{attribute 'pytmc':='pv: DREAM:DGPD:MMT:X'}
     {attribute 'TcLinkTo' := '
-        .nRawEncoderDINT		:=TIID^Device 1 (EtherCAT)^B940_009_R19_DRL_02_E0_EK1200^R19_DRL_02_E4_EK1122^TMO-DREAM-SMARACT-03^DREAM:DGPD:MMT:X^mode/status/pos/fError TxPDO^Position Actual Value;
-    '}
-	 {attribute 'TcLinkToOSO' := '
-        .stDS402Drive.nModeOfOperationNC	:=<0,8,0>TINC^NC-Task 1^Axes^M10 - DREAM:DGPD:MMT:X^Drive^Outputs^Out^nCtrl5;
-        .stDS402Drive.nDS402DriveControlNC := <0,8,0>TINC^NC-Task 1^Axes^M10 - DREAM:DGPD:MMT:X^Drive^Outputs^Out^nCtrl1;
-        .stDS402Drive.nDS402DriveControlNC := <8,8,0>TINC^NC-Task 1^Axes^M10 - DREAM:DGPD:MMT:X^Drive^Outputs^Out^nCtrl2
-    '}
-    {attribute 'TcLinkTo' := '
-        .stDS402Drive.nSlaveAddr:=TIID^Device 1 (EtherCAT)^B940_009_R19_DRL_02_E0_EK1200^R19_DRL_02_E4_EK1122^TMO-DREAM-SMARACT-03^InfoData^AdsAddr^port;
-        .stDS402Drive.stDS402DriveStatus:=TIID^Device 1 (EtherCAT)^B940_009_R19_DRL_02_E0_EK1200^R19_DRL_02_E4_EK1122^TMO-DREAM-SMARACT-03^DREAM:DGPD:MMT:X^mode/status/pos/fError TxPDO^Status Word;
-        .stDS402Drive.nFollowingError:=;TIID^Device 1 (EtherCAT)^B940_009_R19_DRL_02_E0_EK1200^R19_DRL_02_E4_EK1122^TMO-DREAM-SMARACT-03^DREAM:DGPD:MMT:X^mode/status/pos/fError TxPDO^Following Error Actual Value;
-        .stDS402Drive.nModeOfOperation:=TIID^Device 1 (EtherCAT)^B940_009_R19_DRL_02_E0_EK1200^R19_DRL_02_E4_EK1122^TMO-DREAM-SMARACT-03^DREAM:DGPD:MMT:X^ctl/mode/pos RxPDO^Modes of Operation;
-        .stDS402Drive.nModeOfOperationDisplay:=TIID^Device 1 (EtherCAT)^B940_009_R19_DRL_02_E0_EK1200^R19_DRL_02_E4_EK1122^TMO-DREAM-SMARACT-03^DREAM:DGPD:MMT:X^mode/status/pos/fError TxPDO^Modes of Operation Display;
-        .stDS402Drive.nDS402DriveControl:=TIID^Device 1 (EtherCAT)^B940_009_R19_DRL_02_E0_EK1200^R19_DRL_02_E4_EK1122^TMO-DREAM-SMARACT-03^DREAM:DGPD:MMT:X^ctl/mode/pos RxPDO^Control Word;
+        .nRawEncoderDINT		:=TIID^Device 1 (EtherCAT)^B940_009_R19_DRL_02_E0_EK1200^R19_DRL_02_E4_EK1122^TMO-DREAM-SMARACT-03^DREAM:DGPD:MMT:X^mode/status/pos/fError TxPDO^Position Actual Value
     '}
     M10 : ST_MotionStage := (sName:='DREAM:DGPD:MMT:X',
                              nHomingMode:=E_EpicsHomeCmd.NONE,
@@ -101,25 +74,10 @@ VAR_GLOBAL
                              nEnableMode:= ENUM_StageEnableMode.DURING_MOTION,
                              bPowerSelf:=TRUE,
                              bHardwareEnable:=TRUE );
-
-
 	////
 	{attribute 'pytmc':='pv: DREAM:DGPD:MMT:RET'}
     {attribute 'TcLinkTo' := '
-        .nRawEncoderDINT		:=TIID^Device 1 (EtherCAT)^B940_009_R19_DRL_02_E0_EK1200^R19_DRL_02_E4_EK1122^TMO-DREAM-SMARACT-03^DREAM:DGPD:MMT:RET^mode/status/pos/fError TxPDO^Position Actual Value;
-    '}
-   {attribute 'TcLinkToOSO' := '
-        .stDS402Drive.nModeOfOperationNC	:=<0,8,0>TINC^NC-Task 1^Axes^M11 - DREAM:DGPD:MMT:RET^Drive^Outputs^Out^nCtrl5;
-        .stDS402Drive.nDS402DriveControlNC := <0,8,0>TINC^NC-Task 1^Axes^M11 - DREAM:DGPD:MMT:RET^Drive^Outputs^Out^nCtrl1;
-        .stDS402Drive.nDS402DriveControlNC := <8,8,0>TINC^NC-Task 1^Axes^M11 - DREAM:DGPD:MMT:RET^Drive^Outputs^Out^nCtrl2
-    '}
-    {attribute 'TcLinkTo' := '
-        .stDS402Drive.nSlaveAddr:=TIID^Device 1 (EtherCAT)^B940_009_R19_DRL_02_E0_EK1200^R19_DRL_02_E4_EK1122^TMO-DREAM-SMARACT-03^InfoData^AdsAddr^port;
-        .stDS402Drive.stDS402DriveStatus:=TIID^Device 1 (EtherCAT)^B940_009_R19_DRL_02_E0_EK1200^R19_DRL_02_E4_EK1122^TMO-DREAM-SMARACT-03^DREAM:DGPD:MMT:RET^mode/status/pos/fError TxPDO^Status Word;
-        .stDS402Drive.nFollowingError:=;TIID^Device 1 (EtherCAT)^B940_009_R19_DRL_02_E0_EK1200^R19_DRL_02_E4_EK1122^TMO-DREAM-SMARACT-03^DREAM:DGPD:MMT:RET^mode/status/pos/fError TxPDO^Following Error Actual Value;
-        .stDS402Drive.nModeOfOperation:=TIID^Device 1 (EtherCAT)^B940_009_R19_DRL_02_E0_EK1200^R19_DRL_02_E4_EK1122^TMO-DREAM-SMARACT-03^DREAM:DGPD:MMT:RET^ctl/mode/pos RxPDO^Modes of Operation;
-        .stDS402Drive.nModeOfOperationDisplay:=TIID^Device 1 (EtherCAT)^B940_009_R19_DRL_02_E0_EK1200^R19_DRL_02_E4_EK1122^TMO-DREAM-SMARACT-03^DREAM:DGPD:MMT:RET^mode/status/pos/fError TxPDO^Modes of Operation Display;
-        .stDS402Drive.nDS402DriveControl:=TIID^Device 1 (EtherCAT)^B940_009_R19_DRL_02_E0_EK1200^R19_DRL_02_E4_EK1122^TMO-DREAM-SMARACT-03^DREAM:DGPD:MMT:RET^ctl/mode/pos RxPDO^Control Word;
+        .nRawEncoderDINT		:=TIID^Device 1 (EtherCAT)^B940_009_R19_DRL_02_E0_EK1200^R19_DRL_02_E4_EK1122^TMO-DREAM-SMARACT-03^DREAM:DGPD:MMT:RET^mode/status/pos/fError TxPDO^Position Actual Value
     '}
     M11 : ST_MotionStage := (	sName:='DREAM:DGPD:MMT:RET',
                                 nHomingMode:=E_EpicsHomeCmd.NONE,
@@ -127,6 +85,7 @@ VAR_GLOBAL
                                 nEnableMode:= ENUM_StageEnableMode.DURING_MOTION,
                                 bPowerSelf:=TRUE,
                                 bHardwareEnable:=TRUE );
+								
 END_VAR ]]></Declaration>
   </GVL>
 </TcPlcObject>

@@ -24,9 +24,9 @@
 		<Axis File="M6_GSJN-MMS-X.xti" Id="6"/>
 		<Axis File="M8_GSJN-MMS-Z.xti" Id="8"/>
 		<Axis File="M7_GSJN-MMS-Y.xti" Id="7"/>
-		<Axis File="M9 - DREAM%_3ADGPD%_3AMMT%_3AY.xti" Id="9"/>
-		<Axis File="M10 - DREAM%_3ADGPD%_3AMMT%_3AX.xti" Id="10"/>
-		<Axis File="M11 - DREAM%_3ADGPD%_3AMMT%_3ARET.xti" Id="11"/>
+		<Axis File="M10_DREAM_DGPD_MMT_X.xti" Id="10"/>
+		<Axis File="M11_DREAM_DGPD_MMT_RET.xti" Id="11"/>
+		<Axis File="M9_DREAM_DGPD_MMT_Y.xti" Id="9"/>
 		<Axis File="M2 - Coil Roll.xti" Id="2"/>
 		<Axis File="M3 - Coil Yaw.xti" Id="3"/>
 		<Axis File="M4 - GSJP X.xti" Id="4"/>

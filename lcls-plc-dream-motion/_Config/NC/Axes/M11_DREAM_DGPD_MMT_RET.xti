@@ -1424,15 +1424,17 @@ External Setpoint Generation:
 			</Relations>
 		</DataType>
 	</DataTypes>
-	<Axis Id="10" CreateSymbols="true" AxisType="1" AxisFolder="In-Vacuum_motion">
-		<Name>M10 - DREAM:DGPD:MMT:X</Name>
+	<Axis Id="11" CreateSymbols="true" AxisType="1" AxisFolder="In-Vacuum_motion" GroupId="13">
+		<Name>__FILENAME__</Name>
 		<AxisPara>
-			<Dynamic AccelerationMaximum="0.1" DecelerationMaximum="0.1" Acceleration="1" Deceleration="1" Jerk="10"/>
-			<Velo Maximum="1"/>
-			<OtherSettings AllowMotionCmdToSlave="true"/>
+			<Dynamic AccelerationMaximum="10" DecelerationMaximum="10" Acceleration="2.51748" Deceleration="2.51748" Jerk="9.32019"/>
+			<Velo RefSearch="0.5" RefSync="0.4" SlowManual="0.2" FastManual="0.2" Maximum="1"/>
+			<PositionAreaControl Range="0.005"/>
+			<TargetPosControl Enable="false"/>
+			<OtherSettings AllowMotionCmdToSlave="true" PulseDistancePos="0.01" PulseDistanceNeg="0.01"/>
 		</AxisPara>
 		<Encoder Name="Enc" EncType="19">
-			<EncPara MaxCount="#xffffffff"/>
+			<EncPara ScaleFactorNumerator="1e-06" MaxCount="#xffffffff"/>
 			<Vars VarGrpType="1">
 				<Name>Inputs</Name>
 				<Var>
@@ -1547,6 +1549,7 @@ External Setpoint Generation:
 		</Drive>
 		<Controller Name="Ctrl" CtrType="1">
 			<CtrPara PriorControlFactor="1">
+				<PosDiffControl Range="0.05"/>
 				<Observer BandWidth="20"/>
 			</CtrPara>
 		</Controller>
@@ -1568,17 +1571,14 @@ External Setpoint Generation:
 	<Mappings>
 		<OwnerA>
 			<OwnerB Name="TIID^Device 1 (EtherCAT)^B940_009_R19_DRL_02_E0_EK1200^R19_DRL_02_E4_EK1122^TMO-DREAM-SMARACT-03">
-				<Link VarA="Drive^Inputs^In^nDataIn1" VarB="DREAM:DGPD:MMT:X^mode/status/pos/fError TxPDO^Following Error Actual Value"/>
-				<Link VarA="Drive^Inputs^In^nState1" VarB="DREAM:DGPD:MMT:X^mode/status/pos/fError TxPDO^Status Word" Size="8"/>
-				<Link VarA="Drive^Inputs^In^nState2" VarB="DREAM:DGPD:MMT:X^mode/status/pos/fError TxPDO^Status Word" Size="8" OffsB="8"/>
+				<Link VarA="Drive^Inputs^In^nDataIn1" VarB="DREAM:DGPD:MMT:RET^mode/status/pos/fError TxPDO^Following Error Actual Value"/>
+				<Link VarA="Drive^Inputs^In^nState1" VarB="DREAM:DGPD:MMT:RET^mode/status/pos/fError TxPDO^Status Word" Size="8"/>
+				<Link VarA="Drive^Inputs^In^nState2" VarB="DREAM:DGPD:MMT:RET^mode/status/pos/fError TxPDO^Status Word" Size="8" OffsB="8"/>
 				<Link VarA="Drive^Inputs^In^nState4" VarB="WcState^InputToggle" Size="1" OffsA="1"/>
 				<Link VarA="Drive^Inputs^In^nState4" VarB="WcState^WcState" Size="1"/>
-				<Link VarA="Drive^Inputs^In^nState5" VarB="DREAM:DGPD:MMT:X^mode/status/pos/fError TxPDO^Modes of Operation Display"/>
-				<Link VarA="Drive^Outputs^Out^nCtrl1" VarB="DREAM:DGPD:MMT:X^ctl/mode/pos RxPDO^Control Word" Size="8"/>
-				<Link VarA="Drive^Outputs^Out^nCtrl2" VarB="DREAM:DGPD:MMT:X^ctl/mode/pos RxPDO^Control Word" Size="8" OffsB="8"/>
-				<Link VarA="Drive^Outputs^Out^nCtrl5" VarB="DREAM:DGPD:MMT:X^ctl/mode/pos RxPDO^Modes of Operation"/>
-				<Link VarA="Drive^Outputs^Out^nDataOut1" VarB="DREAM:DGPD:MMT:X^ctl/mode/pos RxPDO^Target Position"/>
-				<Link VarA="Enc^Inputs^In^nDataIn1" VarB="DREAM:DGPD:MMT:X^mode/status/pos/fError TxPDO^Position Actual Value"/>
+				<Link VarA="Drive^Inputs^In^nState5" VarB="DREAM:DGPD:MMT:RET^mode/status/pos/fError TxPDO^Modes of Operation Display"/>
+				<Link VarA="Drive^Outputs^Out^nDataOut1" VarB="DREAM:DGPD:MMT:RET^ctl/mode/pos RxPDO^Target Position"/>
+				<Link VarA="Enc^Inputs^In^nDataIn1" VarB="DREAM:DGPD:MMT:RET^mode/status/pos/fError TxPDO^Position Actual Value"/>
 				<Link VarA="Enc^Inputs^In^nState4" VarB="WcState^InputToggle" Size="1" OffsA="1"/>
 				<Link VarA="Enc^Inputs^In^nState4" VarB="WcState^WcState" Size="1"/>
 			</OwnerB>
