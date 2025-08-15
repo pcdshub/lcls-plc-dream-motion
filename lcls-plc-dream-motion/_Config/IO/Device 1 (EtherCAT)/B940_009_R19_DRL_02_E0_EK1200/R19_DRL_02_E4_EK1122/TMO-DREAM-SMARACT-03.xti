@@ -15,7 +15,7 @@
 		<ImageData Id="1000">424de6000000000000007600000028000000100000000e00000001000400000000007000000000000000000000001000000000000000ffffff00e8f0ec00d5d8d600c3c3c300bfc5c200b7b7b6008eb99f0096969500807f7f0043986f00138951000082440075757400486656003b3734000000000088888888255321003333335952255710333336abb9127d5078736abbbb21cd668e739bbba638d799ced3bbba47cc56aaded3bb9ccc549bb9ded3a98d826abbb6ded3eddd14bbbb92ded3eed8219bb9208ed335c8522641007c73be5c3552100078733338000000003333333800000000</ImageData>
 		<ImageData Id="1001">424de2000000000000007200000028000000100000000e00000001000400000000007000000000000000000000000f00000000000000fafafa00f2f2f200e2e2e200d0d0d000b6b6b500b1b1b100b1b1b000a3a3a2008a8a8a007d7d7c006b6b6a005b5b5a005959580057575600ff00ff00eeeeeeddddeeeeeeeeeeddd97dddeeeeeeedddd608dddeeeeeddddd621adddeeeeddddd6662bddeeedddddd66c34dddee6669dd66da1466ee6641ad66dd9666eeddd52b66ddddddeeeddc3566dddddeeeeddda126dddddeeeeeddd806ddddeeeeeeeddd79dddeeeeeeeeeeddddeeeeee</ImageData>
 	</ImageDatas>
-	<Box Id="45" BoxType="9099" BoxFlags="#x00000020">
+	<Box Id="45" Disabled="true" BoxType="9099" BoxFlags="#x00000020">
 		<Name>__FILENAME__</Name>
 		<ImageId>1000</ImageId>
 		<EtherCAT SlaveType="2" PdiType="#x0e80" MboxDataLinkLayer="true" StateMBoxPolling="true" CycleMBoxPollingTime="0" CoeType="39" VendorId="#x00536d61" ProductCode="#x00020d08" RevisionNo="#x00010005" InfoDataAddr="true" InfoDataSoeDS401="true" TimeoutStateChange1="2000" TimeoutStateChange2="3000" TimeoutStateChange3="2000" TimeoutMailbox2="100" CheckRevisionNoType="6" PortPhys="17" SlotPdoIncrement="64" SlotIndexIncrement="2048" Type="MCS2-3C" Desc="MCS2">
