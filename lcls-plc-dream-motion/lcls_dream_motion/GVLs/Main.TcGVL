@@ -52,6 +52,7 @@ VAR_GLOBAL
     M8: ST_MotionStage := (sName := 'DREAM:GSJN:MMS:Z');
 	
 	// In-Vacuum Motion
+	(*
     {attribute 'pytmc':='pv: DREAM:DGPD:MMT:Y'}
     {attribute 'TcLinkTo' := '
         .nRawEncoderDINT		:=TIID^Device 1 (EtherCAT)^B940_009_R19_DRL_02_E0_EK1200^R19_DRL_02_E4_EK1122^TMO-DREAM-SMARACT-03^DREAM:DGPD:MMT:Y^mode/status/pos/fError TxPDO^Position Actual Value
@@ -85,7 +86,7 @@ VAR_GLOBAL
                                 nEnableMode:= ENUM_StageEnableMode.DURING_MOTION,
                                 bPowerSelf:=TRUE,
                                 bHardwareEnable:=TRUE );
-								
+	*)						
 END_VAR ]]></Declaration>
   </GVL>
 </TcPlcObject>

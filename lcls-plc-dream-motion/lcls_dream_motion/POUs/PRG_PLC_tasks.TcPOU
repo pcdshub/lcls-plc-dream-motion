@@ -29,7 +29,7 @@ PRG_GasNozzleXYZ();
 PRG_MainChamber();
 PRG_GasJetPointing();
 PRG_CoilMovers();
-PRG_SMARACT();]]></ST>
+// PRG_SMARACT();]]></ST>
     </Implementation>
     <LineIds Name="PRG_PLC_tasks">
       <LineId Id="3" Count="14" />

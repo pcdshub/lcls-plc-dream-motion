@@ -3,11 +3,13 @@
   <GVL Name="GVL_PMPS" Id="{0d9c2389-744a-4cfb-ae78-77e7acdfb323}">
     <Declaration><![CDATA[{attribute 'qualified_only'}
 VAR_GLOBAL
+	(*
 	{attribute 'pytmc' := 'pv: DREAM:MOTION:ARB:01'}
     fbArbiter1: FB_Arbiter(1);
 
     {attribute 'pytmc' := 'pv: DREAM:MOTION:FFO:02'}
     fbFastFaultOutput1: FB_HardwareFFOutput := (bAutoReset := TRUE, i_sNetID:='172.21.92.73.1.1');
+	*)
 END_VAR]]></Declaration>
   </GVL>
 </TcPlcObject>

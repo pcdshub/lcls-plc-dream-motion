@@ -3,7 +3,8 @@
   <POU Name="PRG_SMARACT" Id="{8c8a4af2-8a7c-4f25-948f-bede85609ff3}" SpecialFunc="None">
     <Declaration><![CDATA[PROGRAM PRG_SMARACT
 VAR
-		{attribute 'TcLinkToOSO' := '
+	(*
+	{attribute 'TcLinkToOSO' := '
         .stDS402Drive.nModeOfOperationNC	:=<0,8,0>TINC^NC-Task 1^Axes^M9_DREAM_DGPD_MMT_Y^Drive^Outputs^Out^nCtrl5;
         .stDS402Drive.nDS402DriveControlNC := <0,8,0>TINC^NC-Task 1^Axes^M9_DREAM_DGPD_MMT_Y^Drive^Outputs^Out^nCtrl1;
         .stDS402Drive.nDS402DriveControlNC := <8,8,0>TINC^NC-Task 1^Axes^M9_DREAM_DGPD_MMT_Y^Drive^Outputs^Out^nCtrl2
@@ -45,7 +46,7 @@ VAR
         .stDS402Drive.nDS402DriveControl:=TIID^Device 1 (EtherCAT)^B940_009_R19_DRL_02_E0_EK1200^R19_DRL_02_E4_EK1122^TMO-DREAM-SMARACT-03^DREAM:DGPD:MMT:RET^ctl/mode/pos RxPDO^Control Word
     '}
 	fb_DGPD_RET : FB_MotionStageMCS2CSP ( stPiezoStage:=Main.M11, eModule:=E_Module.CHAN3 );
-	(*
+	
     stDGPD_RET: ARRAY[1..GeneralConstants.MAX_STATES] OF ST_PositionState;
 	
     {attribute 'pytmc' := '
@@ -79,17 +80,20 @@ fbDGPD_RET_PMPStates(
     bEnablePositionLimits:=TRUE,
 	bReadDBNow:=TRUE,
 );
-*)
+
 fb_DGPD_RET();
 fb_DGPD_X();
 fb_DGPD_Y();
+*)
 ]]></ST>
     </Implementation>
     <LineIds Name="PRG_SMARACT">
       <LineId Id="28" Count="0" />
       <LineId Id="15" Count="12" />
       <LineId Id="13" Count="0" />
-      <LineId Id="5" Count="4" />
+      <LineId Id="5" Count="3" />
+      <LineId Id="29" Count="0" />
+      <LineId Id="9" Count="0" />
     </LineIds>
   </POU>
 </TcPlcObject>
