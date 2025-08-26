@@ -50,22 +50,22 @@ VAR_GLOBAL
                               .bLimitBackwardEnable := TIIB[DRL_05_EL7047_E12]^STM Status^Status^Digital input 1;
                               .nRawEncoderULINT     := TIIB[DRL_05_EL5042_E11]^FB Inputs Channel 2^Position'}
     M8: ST_MotionStage := (sName := 'DREAM:GSJN:MMS:Z');
-	
-	// In-Vacuum Motion
-	(*
+
+    // In-Vacuum Motion
+    (*
     {attribute 'pytmc':='pv: DREAM:DGPD:MMT:Y'}
     {attribute 'TcLinkTo' := '
         .nRawEncoderDINT		:=TIID^Device 1 (EtherCAT)^B940_009_R19_DRL_02_E0_EK1200^R19_DRL_02_E4_EK1122^TMO-DREAM-SMARACT-03^DREAM:DGPD:MMT:Y^mode/status/pos/fError TxPDO^Position Actual Value
     '}
     M9 : ST_MotionStage := (sName:='DREAM:DGPD:MMT:Y',
-							nHomingMode:=E_EpicsHomeCmd.NONE,
+                            nHomingMode:=E_EpicsHomeCmd.NONE,
                             // NB: Must be this 'DURING_MOTION'
-							nEnableMode:= ENUM_StageEnableMode.DURING_MOTION,
-							bPowerSelf:=TRUE,
-							bHardwareEnable:=TRUE );
+                            nEnableMode:= ENUM_StageEnableMode.DURING_MOTION,
+                            bPowerSelf:=TRUE,
+                            bHardwareEnable:=TRUE );
 
-	////
-	{attribute 'pytmc':='pv: DREAM:DGPD:MMT:X'}
+    ////
+    {attribute 'pytmc':='pv: DREAM:DGPD:MMT:X'}
     {attribute 'TcLinkTo' := '
         .nRawEncoderDINT		:=TIID^Device 1 (EtherCAT)^B940_009_R19_DRL_02_E0_EK1200^R19_DRL_02_E4_EK1122^TMO-DREAM-SMARACT-03^DREAM:DGPD:MMT:X^mode/status/pos/fError TxPDO^Position Actual Value
     '}
@@ -75,8 +75,8 @@ VAR_GLOBAL
                              nEnableMode:= ENUM_StageEnableMode.DURING_MOTION,
                              bPowerSelf:=TRUE,
                              bHardwareEnable:=TRUE );
-	////
-	{attribute 'pytmc':='pv: DREAM:DGPD:MMT:RET'}
+    ////
+    {attribute 'pytmc':='pv: DREAM:DGPD:MMT:RET'}
     {attribute 'TcLinkTo' := '
         .nRawEncoderDINT		:=TIID^Device 1 (EtherCAT)^B940_009_R19_DRL_02_E0_EK1200^R19_DRL_02_E4_EK1122^TMO-DREAM-SMARACT-03^DREAM:DGPD:MMT:RET^mode/status/pos/fError TxPDO^Position Actual Value
     '}
@@ -86,7 +86,7 @@ VAR_GLOBAL
                                 nEnableMode:= ENUM_StageEnableMode.DURING_MOTION,
                                 bPowerSelf:=TRUE,
                                 bHardwareEnable:=TRUE );
-	*)						
+    *)
 END_VAR ]]></Declaration>
   </GVL>
 </TcPlcObject>

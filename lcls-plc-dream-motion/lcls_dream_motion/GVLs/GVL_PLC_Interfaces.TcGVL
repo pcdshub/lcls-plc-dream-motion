@@ -3,6 +3,7 @@
   <GVL Name="GVL_PLC_Interfaces" Id="{b4d32037-6176-4da1-a9af-c4baba1b3a23}">
     <Declaration><![CDATA[//{attribute 'qualified_only'}
 VAR_GLOBAL
+    (*
     (*ETHERCAT BRRIDGE COM STATUS*)
     //0: Other side is in OP state, >0: Error
     {attribute 'TcLinkTo' := 'TIIB[R19_DRL_02_E3_EL6695]^SYNC Inputs^TxPDO state
@@ -28,6 +29,7 @@ VAR_GLOBAL
 
     {attribute  'TcLinkTo' := 'TIIB[R19_DRL_02_E3_EL6695]^IO Outputs^DREAM_GNZ_Y_Ext_OUT'}
     xDREAM_GNZ_Y_Ext_OUT AT %Q*: BOOL;
+    *)
 END_VAR]]></Declaration>
   </GVL>
 </TcPlcObject>

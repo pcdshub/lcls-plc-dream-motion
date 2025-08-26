@@ -3,8 +3,8 @@
   <POU Name="PRG_SMARACT" Id="{8c8a4af2-8a7c-4f25-948f-bede85609ff3}" SpecialFunc="None">
     <Declaration><![CDATA[PROGRAM PRG_SMARACT
 VAR
-	(*
-	{attribute 'TcLinkToOSO' := '
+    (*
+    {attribute 'TcLinkToOSO' := '
         .stDS402Drive.nModeOfOperationNC	:=<0,8,0>TINC^NC-Task 1^Axes^M9_DREAM_DGPD_MMT_Y^Drive^Outputs^Out^nCtrl5;
         .stDS402Drive.nDS402DriveControlNC := <0,8,0>TINC^NC-Task 1^Axes^M9_DREAM_DGPD_MMT_Y^Drive^Outputs^Out^nCtrl1;
         .stDS402Drive.nDS402DriveControlNC := <8,8,0>TINC^NC-Task 1^Axes^M9_DREAM_DGPD_MMT_Y^Drive^Outputs^Out^nCtrl2
@@ -17,8 +17,8 @@ VAR
         .stDS402Drive.nModeOfOperationDisplay:=TIID^Device 1 (EtherCAT)^B940_009_R19_DRL_02_E0_EK1200^R19_DRL_02_E4_EK1122^TMO-DREAM-SMARACT-03^DREAM:DGPD:MMT:Y^mode/status/pos/fError TxPDO^Modes of Operation Display;
         .stDS402Drive.nDS402DriveControl:=TIID^Device 1 (EtherCAT)^B940_009_R19_DRL_02_E0_EK1200^R19_DRL_02_E4_EK1122^TMO-DREAM-SMARACT-03^DREAM:DGPD:MMT:Y^ctl/mode/pos RxPDO^Control Word
     '}
-	fb_DGPD_Y : FB_MotionStageMCS2CSP ( stPiezoStage:=Main.M9, eModule:=E_Module.CHAN1 );
-		 {attribute 'TcLinkToOSO' := '
+    fb_DGPD_Y : FB_MotionStageMCS2CSP ( stPiezoStage:=Main.M9, eModule:=E_Module.CHAN1 );
+         {attribute 'TcLinkToOSO' := '
         .stDS402Drive.nModeOfOperationNC	:=<0,8,0>TINC^NC-Task 1^Axes^M10_DREAM_DGPD_MMT_X^Drive^Outputs^Out^nCtrl5;
         .stDS402Drive.nDS402DriveControlNC := <0,8,0>TINC^NC-Task 1^Axes^M10_DREAM_DGPD_MMT_X^Drive^Outputs^Out^nCtrl1;
         .stDS402Drive.nDS402DriveControlNC := <8,8,0>TINC^NC-Task 1^Axes^M10_DREAM_DGPD_MMT_X^Drive^Outputs^Out^nCtrl2
@@ -31,8 +31,8 @@ VAR
         .stDS402Drive.nModeOfOperationDisplay:=TIID^Device 1 (EtherCAT)^B940_009_R19_DRL_02_E0_EK1200^R19_DRL_02_E4_EK1122^TMO-DREAM-SMARACT-03^DREAM:DGPD:MMT:X^mode/status/pos/fError TxPDO^Modes of Operation Display;
         .stDS402Drive.nDS402DriveControl:=TIID^Device 1 (EtherCAT)^B940_009_R19_DRL_02_E0_EK1200^R19_DRL_02_E4_EK1122^TMO-DREAM-SMARACT-03^DREAM:DGPD:MMT:X^ctl/mode/pos RxPDO^Control Word
     '}
-	fb_DGPD_X : FB_MotionStageMCS2CSP ( stPiezoStage:=Main.M10, eModule:=E_Module.CHAN2 );
-	   {attribute 'TcLinkToOSO' := '
+    fb_DGPD_X : FB_MotionStageMCS2CSP ( stPiezoStage:=Main.M10, eModule:=E_Module.CHAN2 );
+       {attribute 'TcLinkToOSO' := '
         .stDS402Drive.nModeOfOperationNC	:=<0,8,0>TINC^NC-Task 1^Axes^M11_DREAM_DGPD_MMT_RET^Drive^Outputs^Out^nCtrl5;
         .stDS402Drive.nDS402DriveControlNC := <0,8,0>TINC^NC-Task 1^Axes^M11_DREAM_DGPD_MMT_RET^Drive^Outputs^Out^nCtrl1;
         .stDS402Drive.nDS402DriveControlNC := <8,8,0>TINC^NC-Task 1^Axes^M11_DREAM_DGPD_MMT_RET^Drive^Outputs^Out^nCtrl2
@@ -45,10 +45,10 @@ VAR
         .stDS402Drive.nModeOfOperationDisplay:=TIID^Device 1 (EtherCAT)^B940_009_R19_DRL_02_E0_EK1200^R19_DRL_02_E4_EK1122^TMO-DREAM-SMARACT-03^DREAM:DGPD:MMT:RET^mode/status/pos/fError TxPDO^Modes of Operation Display;
         .stDS402Drive.nDS402DriveControl:=TIID^Device 1 (EtherCAT)^B940_009_R19_DRL_02_E0_EK1200^R19_DRL_02_E4_EK1122^TMO-DREAM-SMARACT-03^DREAM:DGPD:MMT:RET^ctl/mode/pos RxPDO^Control Word
     '}
-	fb_DGPD_RET : FB_MotionStageMCS2CSP ( stPiezoStage:=Main.M11, eModule:=E_Module.CHAN3 );
-	
+    fb_DGPD_RET : FB_MotionStageMCS2CSP ( stPiezoStage:=Main.M11, eModule:=E_Module.CHAN3 );
+
     stDGPD_RET: ARRAY[1..GeneralConstants.MAX_STATES] OF ST_PositionState;
-	
+
     {attribute 'pytmc' := '
           pv: DGPD:RET:STATES:SET
           io: io
@@ -57,11 +57,11 @@ VAR
         {attribute 'pytmc' := '
           pv: DGPD:RET:STATES:GET
           io: i
-		'}
+        '}
     stDGPD_RET_Get: ENUM_AxisStates;
-	
-	fbDGPD_RET_PMPStates: FB_PositionStatePMPS1D;
-	*)
+
+    fbDGPD_RET_PMPStates: FB_PositionStatePMPS1D;
+    *)
 END_VAR
 ]]></Declaration>
     <Implementation>
@@ -78,7 +78,7 @@ fbDGPD_RET_PMPStates(
     bEnableMotion:=TRUE,
     bEnableBeamParams:=TRUE,
     bEnablePositionLimits:=TRUE,
-	bReadDBNow:=TRUE,
+    bReadDBNow:=TRUE,
 );
 
 fb_DGPD_RET();
@@ -87,13 +87,5 @@ fb_DGPD_Y();
 *)
 ]]></ST>
     </Implementation>
-    <LineIds Name="PRG_SMARACT">
-      <LineId Id="28" Count="0" />
-      <LineId Id="15" Count="12" />
-      <LineId Id="13" Count="0" />
-      <LineId Id="5" Count="3" />
-      <LineId Id="29" Count="0" />
-      <LineId Id="9" Count="0" />
-    </LineIds>
   </POU>
 </TcPlcObject>

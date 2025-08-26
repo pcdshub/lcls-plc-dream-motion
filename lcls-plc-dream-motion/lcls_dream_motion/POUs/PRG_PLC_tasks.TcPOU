@@ -31,10 +31,5 @@ PRG_GasJetPointing();
 PRG_CoilMovers();
 // PRG_SMARACT();]]></ST>
     </Implementation>
-    <LineIds Name="PRG_PLC_tasks">
-      <LineId Id="3" Count="14" />
-      <LineId Id="2" Count="0" />
-      <LineId Id="18" Count="0" />
-    </LineIds>
   </POU>
 </TcPlcObject>
