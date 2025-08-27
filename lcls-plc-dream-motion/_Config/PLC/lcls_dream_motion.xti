@@ -983,7 +983,7 @@ External Setpoint Generation:
 		</DataType>
 	</DataTypes>
 	<Project GUID="{13CD028B-ED78-4875-B8F0-88B1F315EED5}" Name="lcls_dream_motion" PrjFilePath="..\..\lcls_dream_motion\lcls_dream_motion.plcproj" TmcFilePath="..\..\lcls_dream_motion\lcls_dream_motion.tmc" ReloadTmc="true" AmsPort="851" FileArchiveSettings="#x000e" SymbolicMapping="true">
-		<Instance Id="#x08502000" TcSmClass="TComPlcObjDef" KeepUnrestoredLinks="2" TmcHash="{4EEE1AE5-D15E-76F2-117E-D6C70F1BBE04}" TmcPath="lcls_dream_motion\lcls_dream_motion.tmc">
+		<Instance Id="#x08502000" TcSmClass="TComPlcObjDef" KeepUnrestoredLinks="2" TmcHash="{E8493F78-A323-C8C5-F920-F25CDED56E72}" TmcPath="lcls_dream_motion\lcls_dream_motion.tmc">
 			<Name>lcls_dream_motion Instance</Name>
 			<CLSID ClassFactory="TcPlc30">{08500001-0000-0000-F000-000000000064}</CLSID>
 			<Vars VarGrpType="8" AreaNo="4">
@@ -1534,6 +1534,58 @@ External Setpoint Generation:
 					</OwnerB>
 				</OwnerA>
 			</UnrestoredVarLinks>
+			<UnrestoredVarLinks ImportTime="2025-08-15T09:15:23">
+				<OwnerA Name="InputDst" Prefix="TIPC^lcls_dream_motion^lcls_dream_motion Instance" Type="1">
+					<OwnerB Name="TIID^Device 1 (EtherCAT)^B940_009_R19_DRL_02_E0_EK1200^R19_DRL_02_E4_EK1122^TMO-DREAM-SMARACT-03">
+						<Link VarA="Main.M11.nRawEncoderDINT" TypeA="DINT" InOutA="0" GuidA="{18071995-0000-0000-0000-000000000009}" VarB="DREAM:DGPD:MMT:RET^mode/status/pos/fError TxPDO^Position Actual Value" IdB="-231" AutoLink="true" RestoreInfo="ANotFound"/>
+						<Link VarA="Main.M9.nRawEncoderDINT" TypeA="DINT" InOutA="0" GuidA="{18071995-0000-0000-0000-000000000009}" VarB="DREAM:DGPD:MMT:Y^mode/status/pos/fError TxPDO^Position Actual Value" IdB="-217" AutoLink="true" RestoreInfo="ANotFound"/>
+						<Link VarA="PRG_SMARACT.fb_DGPD_RET.stDS402Drive.nFollowingError" TypeA="DINT" InOutA="0" GuidA="{18071995-0000-0000-0000-000000000009}" VarB="DREAM:DGPD:MMT:RET^mode/status/pos/fError TxPDO^Following Error Actual Value" IdB="-232" AutoLink="true" RestoreInfo="ANotFound"/>
+						<Link VarA="PRG_SMARACT.fb_DGPD_RET.stDS402Drive.nModeOfOperationDisplay" TypeA="SINT" InOutA="0" GuidA="{18071995-0000-0000-0000-000000000003}" VarB="DREAM:DGPD:MMT:RET^mode/status/pos/fError TxPDO^Modes of Operation Display" IdB="-229" AutoLink="true" RestoreInfo="ANotFound"/>
+						<Link VarA="PRG_SMARACT.fb_DGPD_RET.stDS402Drive.nSlaveAddr" TypeA="UINT" InOutA="0" GuidA="{18071995-0000-0000-0000-000000000005}" VarB="InfoData^AdsAddr^port" IdB="7665" AutoLink="true" RestoreInfo="ANotFound"/>
+						<Link VarA="PRG_SMARACT.fb_DGPD_RET.stDS402Drive.stDS402DriveStatus" TypeA="lcls_twincat_motion.ST_DS402DriveStatus" InOutA="0" GuidA="{AAB9E5F2-8B02-C218-9F86-7EC5B70A5417}" VarB="DREAM:DGPD:MMT:RET^mode/status/pos/fError TxPDO^Status Word" IdB="-230" AutoLink="true" RestoreInfo="ANotFound"/>
+						<Link VarA="PRG_SMARACT.fb_DGPD_X.stDS402Drive.nFollowingError" TypeA="DINT" InOutA="0" GuidA="{18071995-0000-0000-0000-000000000009}" VarB="DREAM:DGPD:MMT:X^mode/status/pos/fError TxPDO^Following Error Actual Value" IdB="-225" AutoLink="true" RestoreInfo="ANotFound"/>
+						<Link VarA="PRG_SMARACT.fb_DGPD_X.stDS402Drive.nModeOfOperationDisplay" TypeA="SINT" InOutA="0" GuidA="{18071995-0000-0000-0000-000000000003}" VarB="DREAM:DGPD:MMT:X^mode/status/pos/fError TxPDO^Modes of Operation Display" IdB="-222" AutoLink="true" RestoreInfo="ANotFound"/>
+						<Link VarA="PRG_SMARACT.fb_DGPD_X.stDS402Drive.nSlaveAddr" TypeA="UINT" InOutA="0" GuidA="{18071995-0000-0000-0000-000000000005}" VarB="InfoData^AdsAddr^port" IdB="7665" AutoLink="true" RestoreInfo="ANotFound"/>
+						<Link VarA="PRG_SMARACT.fb_DGPD_X.stDS402Drive.stDS402DriveStatus" TypeA="lcls_twincat_motion.ST_DS402DriveStatus" InOutA="0" GuidA="{AAB9E5F2-8B02-C218-9F86-7EC5B70A5417}" VarB="DREAM:DGPD:MMT:X^mode/status/pos/fError TxPDO^Status Word" IdB="-223" AutoLink="true" RestoreInfo="ANotFound"/>
+						<Link VarA="PRG_SMARACT.fb_DGPD_Y.stDS402Drive.nModeOfOperationDisplay" TypeA="SINT" InOutA="0" GuidA="{18071995-0000-0000-0000-000000000003}" VarB="DREAM:DGPD:MMT:Y^mode/status/pos/fError TxPDO^Modes of Operation Display" IdB="-215" AutoLink="true" RestoreInfo="ANotFound"/>
+						<Link VarA="PRG_SMARACT.fb_DGPD_Y.stDS402Drive.nSlaveAddr" TypeA="UINT" InOutA="0" GuidA="{18071995-0000-0000-0000-000000000005}" VarB="InfoData^AdsAddr^port" IdB="7665" AutoLink="true" RestoreInfo="ANotFound"/>
+						<Link VarA="PRG_SMARACT.fb_DGPD_Y.stDS402Drive.stDS402DriveStatus" TypeA="lcls_twincat_motion.ST_DS402DriveStatus" InOutA="0" GuidA="{AAB9E5F2-8B02-C218-9F86-7EC5B70A5417}" VarB="DREAM:DGPD:MMT:Y^mode/status/pos/fError TxPDO^Status Word" IdB="-216" AutoLink="true" RestoreInfo="ANotFound"/>
+					</OwnerB>
+					<OwnerB Name="TINC^NC-Task 1^Axes^M10_DREAM_DGPD_MMT_X">
+						<Link VarA="Main.M10.Axis.NcToPlc" TypeA="MC.NCTOPLC_AXIS_REF" InOutA="0" GuidA="{25521FAA-EA5F-4C7F-8864-BBCCDACD2E98}" VarB="Outputs^ToPlc" RestoreInfo="ANotFound"/>
+						<Link VarA="PRG_SMARACT.fb_DGPD_X.stDS402Drive.nDS402DriveControlNC" TypeA="UINT" InOutA="0" GuidA="{18071995-0000-0000-0000-000000000005}" VarB="Drive^Outputs^Out^nCtrl2" IdB="1515" AutoLink="true" Size="8" OffsA="8" RestoreInfo="ANotFound"/>
+						<Link VarA="PRG_SMARACT.fb_DGPD_X.stDS402Drive.nModeOfOperationNC" TypeA="SINT" InOutA="0" GuidA="{18071995-0000-0000-0000-000000000003}" VarB="Drive^Outputs^Out^nCtrl5" IdB="1530" AutoLink="true" RestoreInfo="ANotFound"/>
+					</OwnerB>
+					<OwnerB Name="TINC^NC-Task 1^Axes^M11_DREAM_DGPD_MMT_RET">
+						<Link VarA="Main.M11.Axis.NcToPlc" TypeA="MC.NCTOPLC_AXIS_REF" InOutA="0" GuidA="{25521FAA-EA5F-4C7F-8864-BBCCDACD2E98}" VarB="Outputs^ToPlc" RestoreInfo="ANotFound"/>
+						<Link VarA="PRG_SMARACT.fb_DGPD_RET.stDS402Drive.nDS402DriveControlNC" TypeA="UINT" InOutA="0" GuidA="{18071995-0000-0000-0000-000000000005}" VarB="Drive^Outputs^Out^nCtrl2" IdB="1812" AutoLink="true" Size="8" OffsA="8" RestoreInfo="ANotFound"/>
+						<Link VarA="PRG_SMARACT.fb_DGPD_RET.stDS402Drive.nModeOfOperationNC" TypeA="SINT" InOutA="0" GuidA="{18071995-0000-0000-0000-000000000003}" VarB="Drive^Outputs^Out^nCtrl5" IdB="1827" AutoLink="true" RestoreInfo="ANotFound"/>
+					</OwnerB>
+					<OwnerB Name="TINC^NC-Task 1^Axes^M9_DREAM_DGPD_MMT_Y">
+						<Link VarA="Main.M9.Axis.NcToPlc" TypeA="MC.NCTOPLC_AXIS_REF" InOutA="0" GuidA="{25521FAA-EA5F-4C7F-8864-BBCCDACD2E98}" VarB="Outputs^ToPlc" RestoreInfo="ANotFound"/>
+						<Link VarA="PRG_SMARACT.fb_DGPD_Y.stDS402Drive.nDS402DriveControlNC" TypeA="UINT" InOutA="0" GuidA="{18071995-0000-0000-0000-000000000005}" VarB="Drive^Outputs^Out^nCtrl2" IdB="2109" AutoLink="true" Size="8" OffsA="8" RestoreInfo="ANotFound"/>
+						<Link VarA="PRG_SMARACT.fb_DGPD_Y.stDS402Drive.nModeOfOperationNC" TypeA="SINT" InOutA="0" GuidA="{18071995-0000-0000-0000-000000000003}" VarB="Drive^Outputs^Out^nCtrl5" IdB="2124" AutoLink="true" RestoreInfo="ANotFound"/>
+					</OwnerB>
+				</OwnerA>
+				<OwnerA Name="OutputSrc" Prefix="TIPC^lcls_dream_motion^lcls_dream_motion Instance" Type="2">
+					<OwnerB Name="TIID^Device 1 (EtherCAT)^B940_009_R19_DRL_02_E0_EK1200^R19_DRL_02_E4_EK1122^TMO-DREAM-SMARACT-03">
+						<Link VarA="PRG_SMARACT.fb_DGPD_RET.stDS402Drive.nModeOfOperation" TypeA="SINT" InOutA="1" GuidA="{18071995-0000-0000-0000-000000000003}" VarB="DREAM:DGPD:MMT:RET^ctl/mode/pos RxPDO^Modes of Operation" IdB="-234" AutoLink="true" RestoreInfo="ANotFound"/>
+						<Link VarA="PRG_SMARACT.fb_DGPD_X.stDS402Drive.nDS402DriveControl" TypeA="UINT" InOutA="1" GuidA="{18071995-0000-0000-0000-000000000005}" VarB="DREAM:DGPD:MMT:X^ctl/mode/pos RxPDO^Control Word" IdB="-226" AutoLink="true" RestoreInfo="ANotFound"/>
+						<Link VarA="PRG_SMARACT.fb_DGPD_X.stDS402Drive.nModeOfOperation" TypeA="SINT" InOutA="1" GuidA="{18071995-0000-0000-0000-000000000003}" VarB="DREAM:DGPD:MMT:X^ctl/mode/pos RxPDO^Modes of Operation" IdB="-227" AutoLink="true" RestoreInfo="ANotFound"/>
+						<Link VarA="PRG_SMARACT.fb_DGPD_Y.stDS402Drive.nDS402DriveControl" TypeA="UINT" InOutA="1" GuidA="{18071995-0000-0000-0000-000000000005}" VarB="DREAM:DGPD:MMT:Y^ctl/mode/pos RxPDO^Control Word" IdB="-219" AutoLink="true" RestoreInfo="ANotFound"/>
+						<Link VarA="PRG_SMARACT.fb_DGPD_Y.stDS402Drive.nModeOfOperation" TypeA="SINT" InOutA="1" GuidA="{18071995-0000-0000-0000-000000000003}" VarB="DREAM:DGPD:MMT:Y^ctl/mode/pos RxPDO^Modes of Operation" IdB="-220" AutoLink="true" RestoreInfo="ANotFound"/>
+					</OwnerB>
+					<OwnerB Name="TINC^NC-Task 1^Axes^M10_DREAM_DGPD_MMT_X">
+						<Link VarA="Main.M10.Axis.PlcToNc" TypeA="MC.PLCTONC_AXIS_REF" InOutA="1" GuidA="{96B75FEB-2D84-43BE-A3EC-D9A681F27D52}" VarB="Inputs^FromPlc" RestoreInfo="ANotFound"/>
+					</OwnerB>
+					<OwnerB Name="TINC^NC-Task 1^Axes^M11_DREAM_DGPD_MMT_RET">
+						<Link VarA="Main.M11.Axis.PlcToNc" TypeA="MC.PLCTONC_AXIS_REF" InOutA="1" GuidA="{96B75FEB-2D84-43BE-A3EC-D9A681F27D52}" VarB="Inputs^FromPlc" RestoreInfo="ANotFound"/>
+					</OwnerB>
+					<OwnerB Name="TINC^NC-Task 1^Axes^M9_DREAM_DGPD_MMT_Y">
+						<Link VarA="Main.M9.Axis.PlcToNc" TypeA="MC.PLCTONC_AXIS_REF" InOutA="1" GuidA="{96B75FEB-2D84-43BE-A3EC-D9A681F27D52}" VarB="Inputs^FromPlc" RestoreInfo="ANotFound"/>
+					</OwnerB>
+				</OwnerA>
+			</UnrestoredVarLinks>
 			<Contexts>
 				<Context>
 					<Id>0</Id>
@@ -1553,8 +1605,10 @@ External Setpoint Generation:
 	<Mappings>
 		<OwnerA Name="lcls_dream_motion Instance">
 			<OwnerB Name="TIID^Device 1 (EtherCAT)^B940_009_R19_DRL_02_E0_EK1200^R19_DRL_02_E4_EK1122^K4S08_DRL_05_E0_EK1100^DRL_05_EL3064_E5">
-				<Link VarA="PlcTask Inputs^Main.M2.nRawEncoderULINT" VarB="AI Standard Channel 1^Value" AutoLink="true" Size="16"/>
-				<Link VarA="PlcTask Inputs^Main.M3.nRawEncoderULINT" VarB="AI Standard Channel 2^Value" AutoLink="true" Size="16"/>
+				<Link VarA="PlcTask Inputs^Main.M2.nRawEncoderINT" VarB="AI Standard Channel 1^Value" AutoLink="true"/>
+				<Link VarA="PlcTask Inputs^Main.M3.nRawEncoderINT" VarB="AI Standard Channel 2^Value" AutoLink="true"/>
+				<Link VarA="PlcTask Inputs^Main.M4.nRawEncoderINT" VarB="AI Standard Channel 3^Value" AutoLink="true"/>
+				<Link VarA="PlcTask Inputs^Main.M5.nRawEncoderINT" VarB="AI Standard Channel 4^Value" AutoLink="true"/>
 			</OwnerB>
 			<OwnerB Name="TIID^Device 1 (EtherCAT)^B940_009_R19_DRL_02_E0_EK1200^R19_DRL_02_E4_EK1122^K4S08_DRL_05_E0_EK1100^DRL_05_EL5042_E11">
 				<Link VarA="PlcTask Inputs^Main.M7.nRawEncoderULINT" VarB="FB Inputs Channel 1^Position" AutoLink="true"/>

@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.12">
+<TcPlcObject Version="1.1.0.1">
   <GVL Name="Main" Id="{18d82037-8457-400f-b1ad-ea349db133b4}">
     <Declaration><![CDATA[{attribute 'qualified_only'}
 VAR_GLOBAL
@@ -12,25 +12,25 @@ VAR_GLOBAL
     {attribute 'pytmc' := 'pv: DREAM:COIL:MMS:ROLL '}
     {attribute 'TcLinkTo' := '.bLimitForwardEnable  := TIIB[DRL_05_EL7047_E3]^STM Status^Status^Digital input 1;
                               .bLimitBackwardEnable := TIIB[DRL_05_EL7047_E3]^STM Status^Status^Digital input 2;
-                              .nRawEncoderULINT     := TIIB[DRL_05_EL3064_E5]^AI Standard Channel 1^Value'}
+                              .nRawEncoderINT     := TIIB[DRL_05_EL3064_E5]^AI Standard Channel 1^Value'}
     M2: ST_MotionStage := (sName := 'DREAM:COIL:MMS:ROLL ');
 
     {attribute 'pytmc' := 'pv: DREAM:COIL:MMS:YAW '}
     {attribute 'TcLinkTo' := '.bLimitForwardEnable  := TIIB[DRL_05_EL7047_E4]^STM Status^Status^Digital input 1;
                               .bLimitBackwardEnable := TIIB[DRL_05_EL7047_E4]^STM Status^Status^Digital input 2;
-                              .nRawEncoderULINT     := TIIB[DRL_05_EL3064_E5]^AI Standard Channel 2^Value'}
+                              .nRawEncoderINT     := TIIB[DRL_05_EL3064_E5]^AI Standard Channel 2^Value'}
     M3: ST_MotionStage := (sName := 'DREAM:COIL:MMS:YAW ');
 
     {attribute 'pytmc' := 'pv: DREAM:GSJP:MMS:X '}
     {attribute 'TcLinkTo' := '.bLimitForwardEnable  := TIIB[DRL_05_EL7047_E6]^STM Status^Status^Digital input 1;
                               .bLimitBackwardEnable := TIIB[DRL_05_EL7047_E6]^STM Status^Status^Digital input 2;
-                              .nRawEncoderULINT     := TIIB[DRL_05_EL5042_E5]^FB Inputs Channel 2^Position'}
+                              .nRawEncoderINT     := TIIB[DRL_05_EL3064_E5]^AI Standard Channel 3^Value'}
     M4: ST_MotionStage := (sName := 'DREAM:GSJP:MMS:X ');
 
     {attribute 'pytmc' := 'pv: DREAM:GSJP:MMS:Z '}
     {attribute 'TcLinkTo' := '.bLimitForwardEnable  := TIIB[DRL_05_EL7047_E7]^STM Status^Status^Digital input 2;
                               .bLimitBackwardEnable := TIIB[DRL_05_EL7047_E7]^STM Status^Status^Digital input 1;
-                              .nRawEncoderULINT     := TIIB[DRL_05_EL5042_E8]^FB Inputs Channel 1^Position'}
+                              .nRawEncoderINT     := TIIB[DRL_05_EL3064_E5]^AI Standard Channel 4^Value'}
     M5: ST_MotionStage := (sName := 'DREAM:GSJP:MMS:Z ');
 
     {attribute 'pytmc' := 'pv: DREAM:GSJN:MMS:X'}
@@ -50,6 +50,43 @@ VAR_GLOBAL
                               .bLimitBackwardEnable := TIIB[DRL_05_EL7047_E12]^STM Status^Status^Digital input 1;
                               .nRawEncoderULINT     := TIIB[DRL_05_EL5042_E11]^FB Inputs Channel 2^Position'}
     M8: ST_MotionStage := (sName := 'DREAM:GSJN:MMS:Z');
+
+    // In-Vacuum Motion
+    (*
+    {attribute 'pytmc':='pv: DREAM:DGPD:MMT:Y'}
+    {attribute 'TcLinkTo' := '
+        .nRawEncoderDINT		:=TIID^Device 1 (EtherCAT)^B940_009_R19_DRL_02_E0_EK1200^R19_DRL_02_E4_EK1122^TMO-DREAM-SMARACT-03^DREAM:DGPD:MMT:Y^mode/status/pos/fError TxPDO^Position Actual Value
+    '}
+    M9 : ST_MotionStage := (sName:='DREAM:DGPD:MMT:Y',
+                            nHomingMode:=E_EpicsHomeCmd.NONE,
+                            // NB: Must be this 'DURING_MOTION'
+                            nEnableMode:= ENUM_StageEnableMode.DURING_MOTION,
+                            bPowerSelf:=TRUE,
+                            bHardwareEnable:=TRUE );
+
+    ////
+    {attribute 'pytmc':='pv: DREAM:DGPD:MMT:X'}
+    {attribute 'TcLinkTo' := '
+        .nRawEncoderDINT		:=TIID^Device 1 (EtherCAT)^B940_009_R19_DRL_02_E0_EK1200^R19_DRL_02_E4_EK1122^TMO-DREAM-SMARACT-03^DREAM:DGPD:MMT:X^mode/status/pos/fError TxPDO^Position Actual Value
+    '}
+    M10 : ST_MotionStage := (sName:='DREAM:DGPD:MMT:X',
+                             nHomingMode:=E_EpicsHomeCmd.NONE,
+                             // NB: Must be this 'DURING_MOTION'
+                             nEnableMode:= ENUM_StageEnableMode.DURING_MOTION,
+                             bPowerSelf:=TRUE,
+                             bHardwareEnable:=TRUE );
+    ////
+    {attribute 'pytmc':='pv: DREAM:DGPD:MMT:RET'}
+    {attribute 'TcLinkTo' := '
+        .nRawEncoderDINT		:=TIID^Device 1 (EtherCAT)^B940_009_R19_DRL_02_E0_EK1200^R19_DRL_02_E4_EK1122^TMO-DREAM-SMARACT-03^DREAM:DGPD:MMT:RET^mode/status/pos/fError TxPDO^Position Actual Value
+    '}
+    M11 : ST_MotionStage := (	sName:='DREAM:DGPD:MMT:RET',
+                                nHomingMode:=E_EpicsHomeCmd.NONE,
+                                // NB: Must be this 'DURING_MOTION'
+                                nEnableMode:= ENUM_StageEnableMode.DURING_MOTION,
+                                bPowerSelf:=TRUE,
+                                bHardwareEnable:=TRUE );
+    *)
 END_VAR ]]></Declaration>
   </GVL>
 </TcPlcObject>
